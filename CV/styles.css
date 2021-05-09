@@ -21,7 +21,7 @@ header{
     padding: 15px;
 }
 .list1 li a{
-    color: #000000;
+    color: hsl(0, 12%, 90%);
     font-family: Globin One;
     font-size: 30px;
     font-weight:bolder;
@@ -42,9 +42,6 @@ header{
     position: absolute;
     right: 70px;
 }
-
-
-
 
 /*index.html*/
 .section1{
@@ -160,8 +157,8 @@ h2{
 
 /*aptitudes.html*/
 .section4{
-    height: 400px;
-    width: 1000px;
+    height: 450px;
+    width: 940px;
     position: relative;
 }
 .div5{
@@ -194,6 +191,43 @@ h2{
 .h3Color{
     color: #062f3f;
 }
+
+/*footer*/
+footer{
+    position: relative;
+    background-color: #0f5b79;
+    border: #000000 solid 5px;
+}
+footer h2{
+    position: absolute;
+    color: #000000;
+   margin: 8px;
+}
+
+.list5 li{
+    position: relative;
+    display: inline-block;
+    font-size: 150%;
+    background-color: #0f5b79;
+}
+.list5 li a{
+    color: #ffffff;
+}
+.liFacebook{
+    margin: 5px;
+    left: 20%;
+}
+.liInstagram{
+    margin: 5px;
+    left: 40%;
+
+}
+.liGithub{
+    margin: 5px;
+    left: 60%;
+
+}
+
 
 
 
