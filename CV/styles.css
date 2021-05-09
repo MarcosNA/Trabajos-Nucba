@@ -1,0 +1,200 @@
+body{
+    font-size: 20px;
+    font-family: 'Bebas Neue', cursive;
+    margin: 20px;
+    background-color: #a09696;
+}
+/*header*/
+header{
+    background-color: #0f5b79;
+    border: 5px solid black;
+    position: relative;
+    height: 70px;
+}
+.list1{
+    position: relative;
+    height: 59px;
+}
+
+.list1 li{
+    display: inline-block;
+    padding: 15px;
+}
+.list1 li a{
+    color: #000000;
+    font-family: Globin One;
+    font-size: 30px;
+    font-weight:bolder;
+}
+.liInicio a{
+    position: absolute;
+    left: 60px; 
+}
+.liEducacion a{
+    position: absolute;
+    left: 300px;
+}
+.liExpe a{
+    position: absolute;
+    right: 370px;
+}
+.liAptitudes a{
+    position: absolute;
+    right: 70px;
+}
+
+
+
+
+/*index.html*/
+.section1{
+    height: 700px;
+    width: 1000px;
+    position: relative;
+}
+.titulo1{
+    position: absolute;
+    font-size: 70px;
+    font-weight: bolder;
+    top: 40px;
+    left: 400px;
+}
+.titulo2{
+    position: absolute;
+    font-size: 37px;
+    font-weight: bolder;
+    color: #062f3f;
+    top: 161px;
+    left: 439px;
+}
+.imagen1 img{
+    position:absolute;
+    left: 498px;
+    height: 140px;
+    width: 140px;
+    top: 210px;
+}
+
+.list2{
+    position: absolute;
+    font-size: 33px;
+    left: 51px;
+    bottom: 50px;
+}
+.list3{
+    position: absolute;
+    font-size: 33px;
+    right: -5px;
+    bottom: 90px;
+}
+
+/*educacion.html*/
+.section2{
+    height: 700px;
+    width: 1000px;
+    position: relative;
+}
+.div1{
+    position: absolute;
+    height: 130px;
+    width: 410px;
+    font-size: 30px;
+    text-align: center;
+    margin: 10px;
+    top: 5%;
+    left: 40%;
+    right: 50%;
+   
+}
+.div2{
+    position: absolute;
+    height: 130px;
+    width: 524px;
+    font-size: 30px;
+    text-align: center;
+    margin: 10px;
+    top: 39%;
+    left: 36%;
+    right: 50%;
+   
+}
+.div3{
+    position: absolute;
+    height: 130px;
+    width: 410px;
+    font-size: 30px;
+    text-align: center;
+    margin: 10px;
+    bottom: 7%;
+    left: 40%;
+    right: 50%;
+}
+h2{
+    color: #062f3f;
+}
+
+/*experiencia.html*/
+.section3{
+    height: 700px;
+    width: 1000px;
+    position: relative;
+}
+.div4{
+    position: absolute;
+    height: 130px;
+    width: 410px;
+    font-size: 30px;
+    text-align: center;
+    margin: 10px;
+    top: 7%;
+    left: 0%;
+    right: 50%;
+}
+
+.list4{
+    position: absolute;
+    font-size: 30px;
+    left: 4%;
+    top: 36%;
+}
+
+/*aptitudes.html*/
+.section4{
+    height: 400px;
+    width: 1000px;
+    position: relative;
+}
+.div5{
+    position: absolute;
+    height: 130px;
+    width: 410px;
+    font-size: 35px;
+    margin: 10px;
+    top: 10%;
+    left: 10%;
+}
+.div6{
+    position: absolute;
+    height: 130px;
+    width: 410px;
+    font-size: 35px;
+    margin: 10px;
+    top: 10%;
+    left: 60%;
+}
+.div7{
+    position: absolute;
+    height: 130px;
+    width: 410px;
+    font-size: 35px;
+    margin: 10px;
+    top: 10%;
+    left: 100%;
+}
+.h3Color{
+    color: #062f3f;
+}
+
+
+
+
