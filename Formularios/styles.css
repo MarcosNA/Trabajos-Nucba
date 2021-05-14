@@ -1,0 +1,304 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Girassol', cursive;   
+    font-size: 25px;
+    background-color: #e73737;
+}
+
+/*header*/
+header{
+    width: 100%;
+    height: 60px;
+    border: #000000 solid 5px;
+    background-color: #df0404;
+}
+
+nav{
+    width: 100%;
+    height: 100%;
+}
+
+ul.list1{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+
+li.liMenu{
+    list-style: none;
+    font-size: 30px;
+    padding: 10px;
+}
+ 
+
+.liMenu a{
+    color: #000000;
+}
+
+.liMenu a:hover{
+    color: #ffffff;
+}
+
+
+/*index.html*/
+section.section1{
+    display:flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 100%;
+}
+
+.section1 h1, h2, img{
+    align-self: center;
+}
+
+
+.section1 img {
+    width: 300px;
+}
+
+.section1 p{
+    align-self: flex-start;
+    width: 100%;
+    margin-top: 40px;
+    font-size: 30px;
+}
+
+/*historia.html*/
+section.section2{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.section2 h3,h4{
+    margin: 10px;
+    align-self: center;
+    font-size: 35px;
+}
+
+.section2 h4{
+    margin-top: 40px;
+}
+
+.section2 img{
+    width: 400px;
+    border-radius: 20px;
+    border: #000000 solid 10px; 
+}
+
+.section2 p{
+    margin-top: 20px;
+}
+
+/*estadio.html*/
+section.section3{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.section3 h4{
+    align-self: flex-start;
+}
+
+.section3 img{
+    align-self: flex-start;
+    width: 500px;
+    border-radius: 20px;
+    border: #000000 solid 5px;
+}
+
+.section3 p{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/*palmares.html*/
+div.table1{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    text-align: center;
+}
+
+.table1 h3{
+    font-size: 45px;
+    margin-top: 50px;
+}
+
+.table1 table{
+    align-self: center;
+    background-color: #e2caca;
+    text-align: center;
+    margin-top: 20px;   
+    width: 750px;
+    height: 350px;
+    border: black solid 10px;
+}
+.table1 table tr b{
+    font-size: 30px;
+    color: #b60000;
+}
+div.table2{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    text-align: center;
+}
+
+.table2 h3{
+    font-size: 45px;
+    margin-top: 50px;
+}
+
+.table2 table{
+    align-self: center;
+    background-color: #e2caca;
+    text-align: center;
+    margin-top: 20px;   
+    width: 750px;
+    height: 574px;
+    border: black solid 10px;
+}
+.table2 table tr b{
+    font-size: 30px;
+    color: #b60000;
+}
+
+/*plantel*/
+section.section4{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section4 h1{
+    align-self:flex-start;
+
+    
+}
+
+.section4 table{
+    background-color: #e2caca;
+    text-align: center;
+    margin-top: 20px;   
+    width: 750px;
+    height: 412px;
+    border: black solid 10px;
+}
+
+.section4 table tr b{
+    font-size: 30px;
+    color: #b60000;
+}
+
+.section4 span{
+    align-self: flex-start;
+    font-size: 30px;
+}
+
+/*micuenta.html*/
+section.section5{
+    margin: 10px;
+}
+
+.list2{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.liForm1{
+    align-self: center;
+    margin: 10px;
+    font-size: 35px;
+    margin-top: 30px;
+}
+.liForm1 input{
+    border: #000000 solid 3px;
+    margin-left: 5px;
+}
+
+.section5 div{
+    display: flex;
+    flex-direction: column;
+}
+
+.menuCuenta{
+    margin-top: 20px;
+    align-self: center;
+}
+
+.menuCuenta a{
+    color: #000000;
+    font-size: 30px;
+}
+
+.menuCuenta a:hover{
+    color: #ffffff;
+}
+
+/*crearcuenta.html*/
+section.section6{
+    margin: 10px;
+}
+
+.list3{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.liForm2{
+    align-self: flex-start;
+    margin: 15px;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.liForm2 input{
+    border: #000000 solid 3px;
+    margin-left: 10px;
+}
+
+textarea{
+    width: 400px;
+    height: 80px;
+}
+
+/*olvido.html*/
+section.section7{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+}
+.section7 form{
+    align-self: center;
+    margin-top: 20px;
+}
+
+/*footer*/
+footer{
+    position: absolute;
+    width: 100%;
+    margin-top: 40px;
+    border: #851313 solid 5px;
+    background-color: #000000;
+}
+.list4{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+.liFooter{
+    list-style: none;
+}
+.liFooter a{
+    color: #dad6d6;
+}

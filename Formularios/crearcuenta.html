@@ -3,30 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
     <title>Crear Cuenta</title>
 </head>
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="index.html">INICIO</a></li>
-                <li><a href="historia.html">HISTORIA</a></li>
-                <li><a href="estadio.html">ESTADIO</a></li>
-                <li><a href="palmares.html">PALMARES</a></li>
-                <li><a href="plantel.html">PLANTEL</a></li>
-                <li><a href="micuenta.html">MI CUENTA</a></li>
+            <ul class="list1">
+                <li class="liMenu"><a href="index.html">INICIO</a></li>
+                <li class="liMenu"><a href="historia.html">HISTORIA</a></li>
+                <li class="liMenu"><a href="estadio.html">ESTADIO</a></li>
+                <li class="liMenu"><a href="palmares.html">PALMARES</a></li>
+                <li class="liMenu"><a href="plantel.html">PLANTEL</a></li>
+                <li class="liMenu"><a href="micuenta.html">MI CUENTA</a></li>
             </ul>
         </nav>
     </header>
-    <section>
+    <section class="section6">
         <form action="./form-result.php" method="POST" target="Self_">
-            <ul>
-                <li><label for="nombre">Nombre: </label> <input type="text" name="nombre"></li>
-                <li><label for="apellido">Apellido: </label> <input type="text" name="apellido"></li>
-                <li><label for="edad">Edad: </label><input type="number" name="edad"></li>
-                <li><label for="nacimiento">Fecha de nacimiento: </label><input type="date" name="nacimiento"></li><br>
+            <ul class="list3">
+                <li class="liForm2"><label for="nombre">Nombre: </label> <input type="text" name="nombre"></li>
+                <li class="liForm2"><label for="apellido">Apellido: </label> <input type="text" name="apellido"></li>
+                <li class="liForm2"><label for="nacimiento">Fecha de nacimiento: </label><input type="date" name="nacimiento"></li><br>
 
-                <li>
+                <li class="liForm2">
                     <label for="sexo">Introduce tu sexo</label>
                     <input type="radio" id="hombre" name="sexo" value="hombre">
                     <label for="male">Hombre</label>
@@ -36,22 +38,22 @@
                     <label for="otro">Otro</label>
                 </li><br>
 
-                <li><label for="email">Correo electronico: </label><input type="email" name="email"></li>
-                <li><label for="contraseña">Contraseña: </label><input type="password" name="contraseña"></li>
-                <li><label for="vericontraseña">Verifique contraseña: </label><input type="password" name="vericontraseña"></li><br>
+                <li class="liForm2"><label for="email">Correo electronico: </label><input type="email" name="email"></li>
+                <li class="liForm2"><label for="contraseña">Contraseña: </label><input type="password" name="contraseña"></li>
+                <li class="liForm2"><label for="vericontraseña">Verifique contraseña: </label><input type="password" name="vericontraseña"></li><br>
                
-                <li>Indique una frase de seguridad</li>
+                <li class="liForm2">Indique una frase de seguridad</li>
                 <textarea name="palabraseguridad" id="frase" cols="20" rows="2"></textarea><br>
             </ul>
 
-            <input type="submit"value="submit">
+            <input  type="submit"value="submit">
         </form>
     </section>
     <footer>
-        <ul>
-            <li><a href="https://www.instagram.com/caindependiente/?hl=es-la" target="blank_">Instagram</a></li>
-            <li><a href="https://www.facebook.com/Independiente" target="blank_">Facebook</a></li>
-            <li><a href="https://twitter.com/Independiente?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="blank_">Twitter</a></li>
+        <ul class="list4">
+            <li class="liFooter"><a href="https://www.instagram.com/caindependiente/?hl=es-la" target="blank_">Instagram</a></li>
+            <li class="liFooter"><a href="https://www.facebook.com/Independiente" target="blank_">Facebook</a></li>
+            <li class="liFooter"><a href="https://twitter.com/Independiente?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="blank_">Twitter</a></li>
         </ul>
     </footer>
 </body>
