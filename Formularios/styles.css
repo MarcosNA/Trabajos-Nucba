@@ -47,6 +47,7 @@ section.section1{
     display:flex;
     flex-direction: column;
     align-items: center; 
+    height: 100%;
     width: 100%;
 }
 
@@ -56,7 +57,7 @@ section.section1{
 
 
 .section1 img {
-    width: 300px;
+    width: 400px;
 }
 
 .section1 p{
@@ -71,6 +72,8 @@ section.section2{
     display: flex;
     flex-direction: column;
     margin: 10px;
+    height: 100%;
+    width: 100%;
 }
 
 .section2 h3,h4{
@@ -173,6 +176,8 @@ section.section4{
     margin: 10px;
     display: flex;
     flex-direction: column;
+    height: 100%;
+    width: 100%;
 }
 
 .section4 h1{
@@ -203,6 +208,8 @@ section.section4{
 /*micuenta.html*/
 section.section5{
     margin: 10px;
+    height: 100%;
+    width: 100%;
 }
 
 .list2{
@@ -244,6 +251,8 @@ section.section5{
 /*crearcuenta.html*/
 section.section6{
     margin: 10px;
+    height: 100%;
+    width: 100%;
 }
 
 .list3{
@@ -275,6 +284,8 @@ section.section7{
     display: flex;
     flex-direction: column;
     font-size: 30px;
+    height: 100%;
+    width: 100%;
 }
 .section7 form{
     align-self: center;

@@ -49,14 +49,14 @@ header{
     width: 1000px;
     position: relative;
 }
-.titulo1{
+.section1 h1{
     position: absolute;
     font-size: 70px;
     font-weight: bolder;
     top: 40px;
     left: 400px;
 }
-.titulo2{
+.section1 h2{
     position: absolute;
     font-size: 37px;
     font-weight: bolder;
@@ -100,7 +100,6 @@ header{
     margin: 10px;
     top: 5%;
     left: 40%;
-    right: 50%;
    
 }
 .div2{
@@ -112,8 +111,6 @@ header{
     margin: 10px;
     top: 39%;
     left: 36%;
-    right: 50%;
-   
 }
 .div3{
     position: absolute;
@@ -124,7 +121,6 @@ header{
     margin: 10px;
     bottom: 7%;
     left: 40%;
-    right: 50%;
 }
 h2{
     color: #062f3f;
@@ -145,7 +141,6 @@ h2{
     margin: 10px;
     top: 7%;
     left: 0%;
-    right: 50%;
 }
 
 .list4{
@@ -157,8 +152,8 @@ h2{
 
 /*aptitudes.html*/
 .section4{
-    height: 450px;
-    width: 940px;
+    height: 700px;
+    width: 1000px;
     position: relative;
 }
 .div5{
@@ -167,7 +162,7 @@ h2{
     width: 410px;
     font-size: 35px;
     margin: 10px;
-    top: 10%;
+    top: 25%;
     left: 10%;
 }
 .div6{
@@ -176,7 +171,7 @@ h2{
     width: 410px;
     font-size: 35px;
     margin: 10px;
-    top: 10%;
+    top: 25%;
     left: 60%;
 }
 .div7{
@@ -185,10 +180,10 @@ h2{
     width: 410px;
     font-size: 35px;
     margin: 10px;
-    top: 10%;
+    top: 25%;
     left: 100%;
 }
-.h3Color{
+.section4 h3{
     color: #062f3f;
 }
 
