@@ -1,6 +1,8 @@
 body{
     width: 100vw;
     height: 100vh;
+    max-width: 100%;
+    max-height: 100%;
     font-family: 'Bebas Neue', cursive;
     background-color: #a09696;
 }
@@ -120,11 +122,16 @@ footer{
     flex-direction: row;
     justify-content:space-around;
     align-items: center;
+    height: 50px;
     width: 100%;
     padding: 5px;
     font-size: 30px;
-    background-color:#083a4e; 
-    border: black solid 5px;
+    background-color:hsl(0, 0%, 0%); 
+    border: #0a4861 solid 5px;
+}
+footer h2{
+    font-size: 30px;
+    color: #0a4861;
 }
 footer div{
     text-align: center;
@@ -134,7 +141,7 @@ footer ul li{
     list-style:none;
 }
 footer ul li a{
-    color: #000000;
+    color: #0a4861;
     margin-left: 50px;
     text-decoration: none;
 }

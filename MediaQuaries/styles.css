@@ -1,0 +1,200 @@
+*{
+    margin: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    font-family: Heart Breaking Bad;
+}
+@font-face{
+    font-family: Heart Breaking Bad;
+    src: url(Fuente/Heart\ Breaking\ Bad.otf);
+}
+a{
+    text-decoration: none;
+}
+
+body{
+  
+    background-color: #211d44;
+    background-position: center;
+}
+
+
+.content {
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+         .header {
+             background: url(Imagenes/header-fondo.png);
+             background-position: center;
+             border: black solid 2px;
+         }
+                .menu {
+                     background-color: rgba(0, 0, 0,.1);
+                     background-position: center;
+                     display: flex;
+                     flex-flow: row nowrap;
+                     justify-content: space-around;
+                     align-items: center;
+                     height: 90px;
+                }
+                        .logo {
+                            flex: 1 1 auto;
+                            display: flex;
+                            justify-content: flex-start;
+                        }
+                                .image-logo{
+                                    height: 85px;
+                                    width: 140px;
+                                }
+
+                        .nav {
+                            flex: 5 1 auto;
+                            height: 50px;
+                            text-align: center;
+                        }
+                                .nav a{
+                                    font-size: 50px;
+                                    font-weight: 700;
+                                    color: #000000;
+                                    text-align: center;
+                                }
+                                .nav a:hover{
+                                    color: #ffffff;
+                                }
+
+                        .social {
+                            flex: 1 1 auto;
+                            text-align: center;
+                            height: 50px;
+                        }
+                            .social i {
+                                Background-color: rgba(0, 0, 0,.2);
+                                color: #000000;
+                                font-size: 25px;
+                            }
+                            .social i:hover{
+                                color: #ffffff;
+                            }
+            
+
+                .titulo{
+                     display: flex;
+                     justify-content: center;
+                     margin-top: 20px;
+                }
+                        h1{
+                            font-family: Heart Breaking Bad;
+                            font-size: 75px;
+                            font-weight: 700;
+                            text-align: center;
+                        }
+            
+         .section {
+            background-color: rgba(0, 0, 0,.1);
+            display: flex;
+         }
+
+                .section img{
+                    border-radius: 20px;
+                    border: black solid 5px;
+                    margin: 0;
+                    padding: 0;
+                }
+
+                .articulos {
+                    flex: 2 1 auto;
+                    display: flex;
+                    flex-flow: row wrap;
+
+                }
+                        .article{
+                            flex: 1 1 40%;
+                            text-align: center;
+                            font-size: 30px;
+                        }
+
+                        .article h2{
+                            color: #ffffff;
+                        }
+
+                           
+
+
+                .aside {
+                    background-color: rgba(0, 0, 0,.1);
+                     flex: 1 1 auto;
+                     display: flex;
+                     flex-direction: column;
+                }
+                         .publicidad {
+                            background-color: rgba(0, 0, 0,.4);
+                            flex: 1 1 auto;
+                            display: flex;
+                            align-items: center;
+                         }
+                         .publicidad img{
+                             border-radius: 20px;
+                             border: #ffffff solid ;
+                            
+                         }
+
+        .footer {
+            background-color: rgba(0, 0, 0,.2);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+                .footer h3 {
+                    color: white;
+                    font-size: 40px;
+                    font-family:'Times New Roman', Times, serif
+                }
+
+                .pie i {
+                    background-color: rgba(0, 0, 0,.3);
+                    text-align: center;
+                    font-size: 30px;
+                    color: #ffffff;
+                }
+
+ @media all and (max-width: 1200px){
+
+    .header{
+        background-color: #020064;
+    }
+
+     .section{
+         flex-direction: column;
+     }
+     .menu{
+         flex-direction: column;
+         justify-content: space-evenly;
+         height:auto;
+        
+     }
+     .aside{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+     }
+ }
+
+ @media all and (max-width: 600px){
+     .articulos{
+         flex-direction: column;
+     }
+ }
+
+ @media all and (max-width: 400px){
+     .aside{
+         display: flex;
+         flex-direction: column;
+     }
+     .menu{
+         flex-flow: column wrap;
+     }
+ }
