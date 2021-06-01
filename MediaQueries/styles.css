@@ -8,14 +8,19 @@
     font-family: Heart Breaking Bad;
     src: url(Fuente/Heart\ Breaking\ Bad.otf);
 }
-a{
-    text-decoration: none;
-}
 
 body{
   
     background-color: #211d44;
     background-position: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
 }
 
 
@@ -133,11 +138,17 @@ body{
                             flex: 1 1 auto;
                             display: flex;
                             align-items: center;
+                            width: 300px;
+                            height: 300px;
                          }
                          .publicidad img{
                              border-radius: 20px;
                              border: #ffffff solid ;
                             
+                         }
+                         
+                         .publicidad img:hover{
+                             transform: scale(1.2);
                          }
 
         .footer {
@@ -150,7 +161,7 @@ body{
 
                 .footer h3 {
                     color: white;
-                    font-size: 40px;
+                    font-size: 30px;
                     font-family:'Times New Roman', Times, serif
                 }
 
@@ -162,10 +173,6 @@ body{
                 }
 
  @media all and (max-width: 1200px){
-
-    .header{
-        background-color: #020064;
-    }
 
      .section{
          flex-direction: column;
@@ -181,20 +188,43 @@ body{
          justify-content: center;
          align-items: center;
      }
- }
-
- @media all and (max-width: 600px){
-     .articulos{
-         flex-direction: column;
+     .titulo h1{
+         font-size: 50px;
+     }
+     .nav{
+         height: 80px;
      }
  }
 
- @media all and (max-width: 400px){
+ @media all and (max-width: 700px){
+     .articulos{
+         flex-direction: column;
+     }
+     .nav{
+        height: 125px;
+    }
+ }
+
+ @media all and (max-width: 464px){
+
+    .header {
+        background:#0e0e3a
+    }
      .aside{
          display: flex;
          flex-direction: column;
      }
      .menu{
          flex-flow: column wrap;
+         max-width: 100%;
+     }
+     .nav{
+         height: 200px;
+     }
+     .nav a{
+         font-size: 50px;
+     }
+     .titulo h1{
+         font-size: 60px;
      }
  }
