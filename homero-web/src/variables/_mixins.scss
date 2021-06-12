@@ -1,0 +1,84 @@
+@import'src/variables/colors';
+
+@mixin resetStyle {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    * img{
+        width: 100%;
+        height: auto;
+    }
+    
+    body {
+        width: 100vw;
+        height: 100vh;
+        max-width: 100%;
+        max-height: 100%;
+        background:$main-background; 
+    }
+    
+}
+
+@mixin imageSize($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin fonFamily {
+    @font-face{
+        font-family: 'simpsonfontregular';
+        src: url(../font/simpsonfont_demo-webfont.woff) format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+}
+
+@mixin animations {
+    @keyframes rotate-animation {
+        from {
+            transform: rotate(0deg);
+        }
+      
+        to {
+            transform: rotate(360deg);
+        }
+      }
+      
+      @keyframes down-move{
+          from {
+              transform: translateY(0);
+          }
+      
+          to {
+              transform: translateY(-5rem);
+          }
+      }  
+}
+
+@mixin mediaQueries {
+
+    main header h1 {
+        @media(max-width: 1200px){
+            font-size: 35px;
+        }   
+    }
+
+    section {
+        @media(max-width: 1200px){
+
+            flex-direction: column;
+        }
+            .section-column {
+                @media(max-width: 1200px){
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                     
+                 }
+            } 
+    }
+}

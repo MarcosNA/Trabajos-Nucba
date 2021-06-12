@@ -1,0 +1,15 @@
+{
+  "name": "animaciones",
+  "version": "1.0.0",
+  "description": "Web template with Node, HTML, CSS and Sass",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass --watch src/assets/sass -o src/assets/css"
+  },
+  "author": "Marcos Nahuel",
+  "license": "MIT",
+  "dependencies": {
+    "install": "^0.13.0",
+    "node-sass": "^6.0.0"
+  }
+}

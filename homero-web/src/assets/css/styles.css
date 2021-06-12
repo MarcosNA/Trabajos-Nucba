@@ -1,0 +1,131 @@
+@keyframes rotate-animation {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+@keyframes down-move {
+  from {
+    transform: translateY(0); }
+  to {
+    transform: translateY(-5rem); } }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+* img {
+  width: 100%;
+  height: auto; }
+
+body {
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  max-height: 100%;
+  background: #78bbcb; }
+
+@media (max-width: 1200px) {
+  main header h1 {
+    font-size: 35px; } }
+
+@media (max-width: 1200px) {
+  section {
+    flex-direction: column; } }
+
+@media (max-width: 1200px) {
+  section .section-column {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; } }
+
+@font-face {
+  font-family: 'simpsonfontregular';
+  src: url(../font/simpsonfont_demo-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+main {
+  width: 100%;
+  height: 100%; }
+  main header {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+    margin-bottom: 5rem; }
+    main header h1 {
+      font-size: 70px;
+      font-family: 'simpsonfontregular';
+      color: #2c2929; }
+
+section {
+  display: flex;
+  justify-content: center; }
+  section .section-column {
+    margin-right: 1.5rem; }
+    section .section-column:nth-of-type(1) div {
+      width: 80px;
+      height: 80px;
+      margin-right: 3rem; }
+      section .section-column:nth-of-type(1) div:nth-of-type(1) {
+        margin-bottom: 4rem;
+        position: relative;
+        bottom: 2rem;
+        left: 3rem; }
+      section .section-column:nth-of-type(1) div:nth-of-type(2) {
+        animation: rotate-animation 2s infinite linear; }
+      section .section-column:nth-of-type(1) div:nth-of-type(3) {
+        margin: 1.9rem 0 2.1rem 0; }
+      section .section-column:nth-of-type(1) div:nth-of-type(4) {
+        width: 70px;
+        height: 70px;
+        position: relative;
+        left: 2.5rem; }
+      section .section-column:nth-of-type(1) div:nth-of-type(5) {
+        position: relative;
+        top: 4rem; }
+    section .section-column:nth-of-type(2) div {
+      width: 80px;
+      height: 80px; }
+      section .section-column:nth-of-type(2) div:nth-of-type(1) {
+        position: relative;
+        bottom: 3rem; }
+      section .section-column:nth-of-type(2) div:nth-of-type(2) {
+        animation: rotate-aimation 2s infinite linear; }
+      section .section-column:nth-of-type(2) div:nth-of-type(3) {
+        position: relative;
+        top: 2rem; }
+    section .section-column:nth-of-type(3) div {
+      animation: down-move 1s infinite linear; }
+      section .section-column:nth-of-type(3) div:hover {
+        animation: rotate-animation 1s infinite linear; }
+    section .section-column:nth-of-type(4) div {
+      width: 75px;
+      height: 75px; }
+      section .section-column:nth-of-type(4) div:nth-of-type(1) {
+        position: relative;
+        bottom: 4rem;
+        animation: rotate-animation 1s infinite  linear; }
+      section .section-column:nth-of-type(4) div:nth-of-type(2) {
+        position: relative;
+        top: 1rem;
+        left: 1rem; }
+      section .section-column:nth-of-type(4) div:nth-of-type(3) {
+        position: relative;
+        top: 3rem; }
+    section .section-column:nth-of-type(5) div {
+      width: 80px;
+      height: 80px; }
+      section .section-column:nth-of-type(5) div:nth-of-type(1) {
+        position: relative;
+        bottom: 3rem; }
+      section .section-column:nth-of-type(5) div:nth-of-type(2) {
+        position: relative;
+        animation: down-move 0.7s infinite linear;
+        animation-delay: 0s;
+        top: 4rem; }
+      section .section-column:nth-of-type(5) div:nth-of-type(3) {
+        position: relative;
+        top: 5rem; }
