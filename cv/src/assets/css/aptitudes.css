@@ -13,12 +13,11 @@ body {
   height: 100vh;
   max-width: 100%;
   max-height: 100%;
-  background: #7c7c7c; }
+  background: #567583; }
 
 h1 {
-  font-size: 32px;
-  position: relative;
-  right: 0.5rem; }
+  font-size: 30px;
+  position: relative; }
 
 h2 {
   font-size: 25px; }
@@ -34,24 +33,30 @@ a {
   a:hover {
     color: #ffffff; }
 
+* {
+  list-style: none; }
+
 .grid-container > * {
+  margin: 5px;
   padding: 10px;
   font-size: 2rem;
-  background: #7c7c7c;
-  border: black solid 2px; }
+  background: #567583;
+  border: black solid 2px;
+  font-family: 'Bebas Neue'; }
 
 .grid-container {
+  background: #567583;
   display: grid;
   grid-gap: 10px;
   width: 100vw;
   height: 100vh;
-  grid-template-areas: "header" "nav" "article" "footer"; }
+  grid-template-areas: "header" "header" "nav" "article" "footer"; }
   .grid-container header {
     grid-area: header;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: #3b5b86; }
+    background: #27374d; }
     .grid-container header .social {
       display: flex;
       flex-direction: column; }
@@ -60,25 +65,26 @@ a {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background: #3b5b75; }
+    background: #264b69; }
     .grid-container nav a {
       color: black;
       font-size: 0px; }
   .grid-container article {
+    background: rgba(0, 0, 0, 0.2);
     grid-area: article;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    font-size: 20px; }
-    .grid-container article div {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between; }
+    text-align: center;
+    justify-content: space-evenly; }
+    .grid-container article div h3 {
+      color: #06111a;
+      font-size: 30px; }
   .grid-container footer {
     grid-area: footer;
-    background: rgba(0, 0, 0, 0.5); }
+    font-size: 25px;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center; }
 
 @media (min-width: 600px) {
   .grid-container {
@@ -89,39 +95,51 @@ a {
       justify-content: space-evenly; }
     .grid-container nav {
       flex-direction: column; }
-    .grid-container article div {
-      justify-content: center;
-      padding: 20px; } }
+    .grid-container article {
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      font-size: 25px; }
+      .grid-container article div h3 {
+        font-size: 30px;
+        color: #06111a; } }
 
-@media (min-width: 1024px) {
+@media (min-width: 600px) and (min-width: 1024px) {
   .grid-container {
-    grid-template-areas: "header header header" "nav article article" "nav article article" "nav article article" "footer footer footer"; }
+    grid-template-areas: "header header header" "nav article artcle" "nav article article" "nav article article" "footer footer footer"; }
     .grid-container header h1 {
-      font-size: 40px;
+      font-size: 45px;
       position: relative;
       right: 3rem; }
     .grid-container header h2 {
-      font-size: 35px; }
+      font-size: 40px; }
     .grid-container header .social {
       width: 40%;
       flex-direction: row;
       justify-content: space-evenly; }
       .grid-container header .social i {
-        font-size: 40px;
-        border: 5px solid black; }
+        font-size: 45px;
+        border: 5px solid black;
+        border-radius: 20%; }
     .grid-container nav {
       flex-direction: column;
-      justify-content: space-around;
+      justify-content: space-evenly;
       align-items: flex-start; }
       .grid-container nav a {
-        font-size: 30px; }
+        font-size: 35px; }
         .grid-container nav a:hover {
           color: white; }
-    .grid-container article div {
-      font-size: 25px;
+    .grid-container article {
+      grid-area: article;
       flex-direction: row;
       justify-content: space-evenly;
-      align-items: center;
-      padding: 20px; }
+      align-items: center; }
+      .grid-container article div {
+        padding: 10px;
+        font-size: 30px; }
+        .grid-container article div h3 {
+          font-size: 40px;
+          color: #06111a; }
     .grid-container footer {
-      font-size: 25px; } }
+      font-size: 25px;
+      text-align: center; } }

@@ -1,0 +1,139 @@
+@import'src/variables/_main';
+
+@include resetStyle;
+@include fontSize;
+
+.grid-container >*{
+    margin: 10px;
+    padding: 10px;
+    font-size: 2rem;
+    background: $body-background;
+    border: black solid 2px;
+    font-family: 'Bebas Neue';
+}
+
+.grid-container{
+    background: $body-background;
+    display: grid;
+    grid-gap: 10px;   
+    width: 100vw;
+    height: 100vh;
+    grid-template-areas:
+        "header"
+        "nav"
+        "article"
+        "footer";     
+
+        header{
+            grid-area: header;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: $header-background;
+                .social{
+                    display: flex;
+                    flex-direction: column;
+                }      
+        }
+        nav{
+            grid-area: nav;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background: $nav-background;
+                a{
+                    color: black;
+                    font-size: 0px;
+                }  
+        }
+        article{
+            background: $article-background;
+            grid-area: article;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            text-align: center;
+            div{
+                h2{
+                 font-size: 35px;
+                 color: #06111a;
+                }
+                h3{
+                    font-size: 30px;
+                }
+                
+            }
+        }
+        footer{
+            grid-area: footer;
+            font-size: 25px;
+            background: $footer-background;
+            text-align: center;
+        }
+}
+
+//mediaqueries
+@media (min-width: 1024px){
+    .grid-container {
+        grid-template-areas:
+       "header header header"
+       "nav article article"
+       "nav article article"
+       "nav article article"
+       "footer footer footer";
+
+       header{
+           h1{
+               font-size: 45px;
+               position: relative;
+               right: 3rem;
+           }
+           h2{
+               font-size: 40px;
+           }
+           .social{
+               width: 40%;
+               flex-direction: row;
+               justify-content: space-evenly;
+                    i{
+                        font-size: 45px;
+                        border: 5px solid black;
+                        border-radius: 20%;
+                    }
+           }
+       }
+       nav{
+           flex-direction: column;
+           justify-content: space-evenly;
+           align-items: flex-start;
+                a{
+                    font-size: 35px;
+                    &:hover{
+                        color: white;
+                    }
+                }
+       }
+
+       article{
+           grid-area: article;
+           div{
+               justify-content: center;
+               align-items: center;
+               padding: 10px;
+                    h2{
+                        font-size: 40px;
+                        color: #06111a;
+                    }
+                    h3{
+                        font-size: 35px;
+                    }
+           }
+       }
+
+       footer{
+           font-size: 25px;
+       }
+   } 
+
+}
