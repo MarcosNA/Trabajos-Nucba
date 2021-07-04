@@ -1,0 +1,28 @@
+@import'src/variables/colors';
+
+@mixin resetStyle {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Cinzel', serif;
+    }
+
+    * img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    li{
+        list-style: none;
+    } 
+    
+
+}
+
+@mixin imageSize($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+
