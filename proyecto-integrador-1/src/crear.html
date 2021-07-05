@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/crear.css">
+    <link rel="stylesheet" href="./assets/iComoon/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&display=swap" rel="stylesheet">
+
+    <title>Crear Cuenta</title>
+</head>
+<body>
+    <main class="cuenta-container">
+        <div class="logo">
+            <a href="index.html"><img src="./assets/img/logo.png" alt="Logo"></a>   
+        </div>
+
+        <div class="form">
+            <form action="./form-result.php" method="POST" target="Self_">
+                <h2>Crear Cuenta</h2>
+                <ul>
+                    <li><input type="text" name="nombre" placeholder="Nombre"></li>
+                    <li><input type="text" name="apellido" placeholder="Apellido"></li>
+        
+                    <li class="genero">
+                        <label for="sexo">Introduce tu sexo</label><br>
+                        <input type="radio" id="hombre" name="sexo" value="hombre">
+                        <label for="male">Hombre</label>
+                        <input type="radio" id="mujer" name="sexo" value="mujer">
+                        <label for="female">Mujer</label>
+                        <input type="radio" id="otro" name="sexo" value="otro">
+                        <label for="otro">Otro</label>
+                    </li>
+    
+                    <li><input type="email" name="email" placeholder="Email"></li>
+                    <li><input type="password" name="contraseña" placeholder="Contraseña"></li>
+                    <li><input type="password" name="vericontraseña" placeholder="Confirmar Contraseña"></li><br>
+                   
+                    <li>Indique una frase de seguridad</li>
+                    <textarea name="palabraseguridad" id="frase" cols="20" rows="2"></textarea><br>
+                </ul>
+    
+                <input type="submit" class="boton">
+            </form>
+        </div>
+
+    </main>
+           
+</body>
+</html>

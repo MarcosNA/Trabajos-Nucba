@@ -11,12 +11,16 @@
 li {
   list-style: none; }
 
+body {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../img/container.png); }
+
 .container {
   height: 100%;
   width: 100%;
   max-width: 100%;
   max-height: 100%;
-  background-image: url(../img/container.png);
   display: flex;
   flex-direction: column; }
   .container header {
@@ -24,29 +28,71 @@ li {
     display: flex;
     flex-direction: column;
     background-image: url(../img/main.png);
-    background-color: #1b1919;
+    background-color: #2e2c2c;
     background-blend-mode: soft-light;
     background-position: center;
     border-bottom: 2px solid #ffffff; }
+    @media all and (max-width: 400px) {
+      .container header {
+        height: 30rem; } }
+    @media all and (max-width: 900px) {
+      .container header {
+        height: 30rem; } }
     .container header .menu {
       background-color: rgba(0, 0, 0, 0.7);
       display: flex;
       justify-content: space-between;
       align-items: center;
       border-bottom: 2px solid rgba(240, 238, 238, 0.9); }
+      @media all and (max-width: 400px) {
+        .container header .menu {
+          flex-direction: column;
+          justify-content: center;
+          background-color: rgba(0, 0, 0, 0.9);
+          height: 25rem; } }
+      @media all and (max-width: 900px) {
+        .container header .menu {
+          flex-direction: column;
+          justify-content: center;
+          background-color: rgba(0, 0, 0, 0.9);
+          height: 20rem; } }
       .container header .menu .logo {
         flex-grow: 1;
-        text-align: center; }
+        text-align: center;
+        width: 180px;
+        height: 180px; }
+        @media all and (max-width: 600px) {
+          .container header .menu .logo {
+            height: 180px;
+            width: 180px; } }
+        @media all and (max-width: 400px) {
+          .container header .menu .logo {
+            height: 0;
+            width: 0; } }
       .container header .menu nav {
         flex-grow: 2;
         display: flex;
         justify-content: space-evenly; }
+        @media all and (max-width: 400px) {
+          .container header .menu nav {
+            flex-direction: column;
+            text-align: center; } }
         .container header .menu nav div a {
           position: relative;
           color: white;
           text-decoration: none;
           font-size: 1.5rem;
           font-weight: 500; }
+          @media all and (max-width: 900px) {
+            .container header .menu nav div a {
+              font-size: 1.5rem;
+              margin: 0.5rem;
+              position: relative;
+              bottom: 2rem; } }
+          @media all and (max-width: 400px) {
+            .container header .menu nav div a {
+              bottom: 2rem;
+              text-align: center; } }
           .container header .menu nav div a::after {
             content: "";
             position: absolute;
@@ -68,6 +114,11 @@ li {
           border-radius: 1.5rem;
           border: 2px solid #ffffff;
           padding: 1rem 1rem; }
+          @media all and (max-width: 900px) {
+            .container header .menu .login a {
+              font-size: 1.3rem;
+              position: relative;
+              bottom: 1.5rem; } }
           .container header .menu .login a:hover {
             background-color: #633030;
             transform: .1s all;
@@ -78,6 +129,9 @@ li {
       justify-content: center;
       align-items: center;
       font-size: 1.5rem; }
+      @media all and (max-width: 400px) {
+        .container header .titulo {
+          font-size: 1rem; } }
       .container header .titulo h1 {
         padding: 2rem;
         color: #000000;
@@ -90,10 +144,13 @@ li {
     padding: 1rem;
     background: #ada9a9;
     border: 3px solid black; }
+    @media all and (max-width: 400px) {
+      .container .section-historia {
+        margin: 0; } }
     .container .section-historia h2 {
       border-bottom: 1px black solid;
       color: #633030;
-      font-size: 1.5rem; }
+      font-size: 2rem; }
     .container .section-historia h3 {
       text-align: center;
       margin-top: 0.5rem;
@@ -104,10 +161,22 @@ li {
       justify-content: space-around;
       align-items: center;
       padding: 2rem; }
+      @media all and (max-width: 400px) {
+        .container .section-historia .historia-multimedia {
+          flex-direction: column; } }
+      @media all and (max-width: 600px) {
+        .container .section-historia .historia-multimedia {
+          flex-direction: column; } }
       .container .section-historia .historia-multimedia .historia-foto {
         flex: 0 0 1;
         width: 400px;
         height: auto; }
+        @media all and (max-width: 600px) {
+          .container .section-historia .historia-multimedia .historia-foto {
+            width: 350px; } }
+        @media all and (max-width: 400px) {
+          .container .section-historia .historia-multimedia .historia-foto {
+            width: 300px; } }
         .container .section-historia .historia-multimedia .historia-foto img {
           border-radius: 20%;
           border: 2px solid black;
@@ -118,15 +187,23 @@ li {
         border-bottom: 2px solid black;
         border-top: 2px solid black;
         padding: 1rem; }
+        @media all and (max-width: 600px) {
+          .container .section-historia .historia-multimedia .historia-parrafo {
+            width: 20rem;
+            padding: 0.5rem;
+            margin-top: 1rem; } }
   .container .section-catalogo {
     margin: 1rem;
     padding: 1rem;
     background: #ada9a9;
     border: 3px solid black; }
+    @media all and (max-width: 400px) {
+      .container .section-catalogo {
+        margin: 0; } }
     .container .section-catalogo h2 {
       border-bottom: 1px solid black;
       color: #633030;
-      font-size: 1.5rem;
+      font-size: 2rem;
       margin-bottom: 2rem; }
     .container .section-catalogo .catalogo-container {
       display: flex;
@@ -142,6 +219,10 @@ li {
         margin: 1rem;
         border: 2px solid #000000;
         border-radius: 10%; }
+        @media all and (max-width: 600px) {
+          .container .section-catalogo .catalogo-container .image-box {
+            width: 220px;
+            height: 220px; } }
         .container .section-catalogo .catalogo-container .image-box:hover {
           border: 4px solid #ffffff; }
         .container .section-catalogo .catalogo-container .image-box:hover .capa {
@@ -181,10 +262,13 @@ li {
     padding: 1rem;
     background-color: #ada9a9;
     border: 3px solid #000000; }
+    @media all and (max-width: 400px) {
+      .container .section-contacto {
+        margin: 0; } }
     .container .section-contacto h2 {
       color: #633030;
       border-bottom: 1px solid #000000;
-      font-size: 1.5rem; }
+      font-size: 2rem; }
     .container .section-contacto h3 {
       color: #633030;
       text-align: center;
@@ -200,6 +284,10 @@ li {
         display: flex;
         flex-direction: column;
         font-size: 1.3rem; }
+        @media all and (max-width: 600px) {
+          .container .section-contacto .container-contact .datos {
+            position: relative;
+            bottom: 1.5rem; } }
         .container .section-contacto .container-contact .datos i {
           margin: 1rem; }
       .container .section-contacto .container-contact .form-data {
@@ -239,9 +327,13 @@ li {
       .container footer .redes h4 {
         margin-bottom: 1.5rem;
         font-size: 1.5rem; }
+        @media all and (max-width: 400px) {
+          .container footer .redes h4 {
+            font-size: 1rem; } }
       .container footer .redes a {
         color: #ffffff;
-        text-decoration: none; }
+        text-decoration: none;
+        padding: 2px; }
         .container footer .redes a .icon-facebook:hover {
           background-color: #3b5998; }
         .container footer .redes a .icon-instagram:hover {
@@ -252,7 +344,29 @@ li {
           padding: 0.2rem;
           border: 2px solid white;
           border-radius: 20%; }
+          @media all and (max-width: 600px) {
+            .container footer .redes a i {
+              font-size: 1.5rem;
+              margin: 0; } }
+          @media all and (max-width: 400px) {
+            .container footer .redes a i {
+              font-size: 1rem; } }
+    .container footer .logo {
+      height: 180px;
+      width: 180px; }
+      @media all and (max-width: 400px) {
+        .container footer .logo {
+          position: relative;
+          left: 0.3rem;
+          top: 2rem; } }
+      .container footer .logo a {
+        height: 100%;
+        width: 100%; }
     .container footer .info {
       color: #ffffff;
       display: flex;
       flex-direction: column; }
+      @media all and (max-width: 400px) {
+        .container footer .info {
+          position: relative;
+          left: 1rem; } }
