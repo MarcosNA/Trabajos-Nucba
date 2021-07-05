@@ -397,10 +397,13 @@ body {
     .container footer .redes {
       color: #ffffff;
       text-align: center; }
+      @media all and (max-width: 600px) {
+        .container footer .redes {
+          width: 200px; } }
       .container footer .redes h4 {
         margin-bottom: 1.5rem;
         font-size: 1.5rem; }
-        @media all and (max-width: 400px) {
+        @media all and (max-width: 600px) {
           .container footer .redes h4 {
             font-size: 1rem; } }
       .container footer .redes a {
@@ -417,17 +420,14 @@ body {
           padding: 0.2rem;
           border: 2px solid #ffffff;
           border-radius: 20%; }
-          @media all and (max-width: 400px) {
-            .container footer .redes a i {
-              font-size: 1rem; } }
           @media all and (max-width: 600px) {
             .container footer .redes a i {
               font-size: 1.5rem;
-              margin: 0; } }
+              border: none; } }
     .container footer .logo {
       height: 180px;
       width: 180px; }
-      @media all and (max-width: 400px) {
+      @media all and (max-width: 600px) {
         .container footer .logo {
           position: relative;
           left: 0.3rem;
@@ -438,8 +438,10 @@ body {
     .container footer .info {
       color: #ffffff;
       display: flex;
-      flex-direction: column; }
-      @media all and (max-width: 400px) {
+      flex-direction: column;
+      font-size: 1.5rem; }
+      @media all and (max-width: 800px) {
         .container footer .info {
           position: relative;
-          left: 1rem; } }
+          left: 1rem;
+          font-size: 0.8rem; } }
