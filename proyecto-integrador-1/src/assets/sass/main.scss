@@ -134,11 +134,19 @@ body{
                            border: 2px solid #ffffff;
                            padding: 1rem 1rem;
 
+                           @media all and (max-width:400px){
+                            font-size: 1.3rem;
+                            position: relative;
+                            bottom: 1rem;
+                        }
+
                            @media all and (max-width:900px){
                             font-size: 1.3rem;
                             position: relative;
-                            bottom: 1.5rem;
+                            bottom: 1.2rem;
                         }
+                       
+
     
                                 &:hover{
                                     background-color:#633030 ;
@@ -151,7 +159,7 @@ body{
 
           .titulo{
               display: flex;
-              height: 100%;
+              height: 12rem;
               justify-content: center;
               align-items: center;
               font-size: 1.5rem;
@@ -188,12 +196,20 @@ body{
                 border-bottom: 1px black solid;
                 color: #633030;
                 font-size: 2rem;
+                
+                @media all and (min-width:1800px){
+                    font-size: 3rem;
+                }
             }
             h3{
                 text-align: center;
                 margin-top: 0.5rem;
                 color: #633030;
                 font-size: 2rem;
+
+                @media all and (min-width:1800px){
+                    font-size: 3rem;
+                }
             }
             .historia-multimedia{
                 display: flex;
@@ -201,20 +217,21 @@ body{
                 align-items: center;
                 padding: 2rem;
 
-                @media all and (max-width:400px){
+                @media all and (max-width:800px){
                     flex-direction: column;
                 }
 
-                @media all and (max-width:600px){
-                    flex-direction: column;
-                }
 
                     .historia-foto{
                         flex: 0 0 1;
                          width: 400px;
                          height: auto;
 
-                         @media all and (max-width:600px){
+                         @media all and (min-width:1800px){
+                            width: 500px;
+                        }
+
+                         @media all and (max-width:800px){
                             width: 350px;
                         }
                         @media all and (max-width:400px){
@@ -234,11 +251,30 @@ body{
                         border-top: 2px solid black;
                         padding: 1rem;
 
+
+                        @media all and (min-width:1800px){
+                            width: 60rem;
+                            font-size: 1.5rem;
+                        }
+
+                        @media all and (min-width:1300px){
+                            font-size: 1.3rem;
+                            margin-top: 1rem;
+                            padding: 0.5rem;
+                        }
+
+                        @media all and (max-width:800px){
+                            font-size: 1.3rem;
+                            margin-top: 1rem;
+                            padding: 0.5rem;
+                        }
+
                         @media all and (max-width:600px){
+                            font-size:1rem;
                             width: 20rem;
                             padding: 0.5rem;
                             margin-top: 1rem;
-                        }
+                        }  
                     }
             }
              
@@ -259,6 +295,10 @@ body{
                 color: #633030;
                 font-size: 2rem;
                 margin-bottom: 2rem;
+
+                @media all and (min-width:1800px){
+                    font-size: 3rem;
+                }
             }
          
             .catalogo-container{
@@ -275,6 +315,14 @@ body{
                             margin: 1rem;
                             border: 2px solid #000000;
                             border-radius: 10%;
+
+                            @media all and (max-width:2300px){
+                                width: 420px;
+                            }
+
+                            @media all and (max-width:1500px){
+                                width: 250px;
+                            }
 
                             @media all and (max-width:600px){
                                 width: 220px;
@@ -344,6 +392,10 @@ body{
                     color: #633030;
                     border-bottom: 1px solid #000000;
                     font-size: 2rem;
+
+                    @media all and (min-width:1800px){
+                        font-size: 3rem;
+                    }
                 }
                 h3{
                     color: #633030;
