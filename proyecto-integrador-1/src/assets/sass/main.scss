@@ -478,30 +478,38 @@ body{
                                                 border-bottom: 1px solid $black-color;
                                                 height: 2rem;
                                                 width: 15rem;
+                                                    &:hover{
+                                                        background-color: rgba(221, 216, 216, 0.9);
+                                                        font-weight: 700;
+                                                        border: 1px solid $black-color;
+                                                    }
 
                                                 @media all and (min-width:400px){
                                                     width: 20rem;
                                                 }
                                             }
-                                            .boton{
+                                            textarea{
                                                 background-color: $form-fondo;
-                                                border-radius: 20%;
                                                 border: 1px solid $black-color;
-                                                font-size: 1rem;
-                                                font-weight: 700;
-                                                padding: 2rem;
-                                                width: 8rem;
-                                                    input{
-                                                        text-align: center;
-                                                    }
                                                     &:hover{
-                                                        font-size: 1;
-                                                        background-color: $hover-color;
+                                                        background-color: rgba(221, 216, 216, 0.9);
+                                                        font-weight: 700;
                                                     }
                                             }
                                         }
-
-                                }    
+                                } 
+                                .boton{
+                                    background-color: $form-fondo;
+                                    border-radius: 20%;
+                                    border: 1px solid $black-color;
+                                    font-size: 1.5rem;
+                                    font-weight: 600;
+                                    padding: 1rem;                                    
+                                        &:hover{
+                                            font-size: 1;
+                                            background-color: $hover-color;
+                                        }
+                                }   
                         }
                 }     
         }

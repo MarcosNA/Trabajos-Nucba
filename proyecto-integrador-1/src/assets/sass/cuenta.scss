@@ -59,6 +59,13 @@ body{
                         border-bottom: 1px solid #ffffff;
                         font-size: 1rem;
                         padding: 0.5rem;
+                        color: $white-color;
+                            &:hover{
+                                font-weight: 700;
+                                background-color: rgba(221, 216, 216, 0.9);
+                                border: 2px solid $white-color;
+                                color: $black-color;
+                            }
                     }   
             }
             .boton{

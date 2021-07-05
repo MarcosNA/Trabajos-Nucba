@@ -55,9 +55,17 @@ body {
         border: none;
         border-bottom: 1px solid #ffffff;
         font-size: 1rem;
-        padding: 0.5rem; }
-        .cuenta-container .form li input .fecha {
-          color: #ffffff; }
+        padding: 0.5rem;
+        color: #ffffff; }
+        .cuenta-container .form li input:hover {
+          background-color: rgba(221, 216, 216, 0.9);
+          border: 2px solid #ffffff;
+          color: #000000;
+          font-weight: 700; }
+    .cuenta-container .form textarea {
+      font-weight: 700; }
+      .cuenta-container .form textarea:hover {
+        border: 3px solid #633030; }
     .cuenta-container .form .genero {
       background-color: rgba(0, 0, 0, 0.5);
       padding: 0.5rem; }

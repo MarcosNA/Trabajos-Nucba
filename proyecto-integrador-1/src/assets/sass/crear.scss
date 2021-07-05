@@ -48,14 +48,24 @@ body{
                     input{
                         background-color: rgba(0, 0, 0, 0.5);
                         border: none;
-                        border-bottom: 1px solid #ffffff;
+                        border-bottom: 1px solid $white-color;
                         font-size: 1rem;
                         padding: 0.5rem;  
-                            .fecha{
-                                color: #ffffff;
-                            }     
-                    }       
+                        color: $white-color;
+                            &:hover{
+                                background-color: rgba(221, 216, 216, 0.9);
+                                border: 2px solid $white-color;
+                                color: $black-color;
+                                font-weight: 700;
+                            }   
+                    }          
             }
+            textarea{
+                font-weight: 700;
+                    &:hover{
+                        border: 3px solid $text-color;
+                    }
+            }  
             .genero{
                 background-color: rgba(0, 0, 0, 0.5);
                 padding: 0.5rem;

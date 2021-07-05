@@ -61,7 +61,13 @@ body {
         border: none;
         border-bottom: 1px solid #ffffff;
         font-size: 1rem;
-        padding: 0.5rem; }
+        padding: 0.5rem;
+        color: #ffffff; }
+        .cuenta-container .form ul input:hover {
+          font-weight: 700;
+          background-color: rgba(221, 216, 216, 0.9);
+          border: 2px solid #ffffff;
+          color: #000000; }
     .cuenta-container .form .boton {
       border: 2px solid #ffffff;
       border-radius: 20%;

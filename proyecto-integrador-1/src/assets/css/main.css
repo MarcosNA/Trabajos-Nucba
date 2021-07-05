@@ -371,22 +371,29 @@ body {
             border-bottom: 1px solid #000000;
             height: 2rem;
             width: 15rem; }
+            .container .section-contacto .container-contact .form-data ul li input:hover {
+              background-color: rgba(221, 216, 216, 0.9);
+              font-weight: 700;
+              border: 1px solid #000000; }
             @media all and (min-width: 400px) {
               .container .section-contacto .container-contact .form-data ul li input {
                 width: 20rem; } }
-          .container .section-contacto .container-contact .form-data ul li .boton {
+          .container .section-contacto .container-contact .form-data ul li textarea {
             background-color: rgba(0, 0, 0, 0.2);
-            border-radius: 20%;
-            border: 1px solid #000000;
-            font-size: 1rem;
-            font-weight: 700;
-            padding: 2rem;
-            width: 8rem; }
-            .container .section-contacto .container-contact .form-data ul li .boton input {
-              text-align: center; }
-            .container .section-contacto .container-contact .form-data ul li .boton:hover {
-              font-size: 1;
-              background-color: #805252; }
+            border: 1px solid #000000; }
+            .container .section-contacto .container-contact .form-data ul li textarea:hover {
+              background-color: rgba(221, 216, 216, 0.9);
+              font-weight: 700; }
+        .container .section-contacto .container-contact .form-data .boton {
+          background-color: rgba(0, 0, 0, 0.2);
+          border-radius: 20%;
+          border: 1px solid #000000;
+          font-size: 1.5rem;
+          font-weight: 600;
+          padding: 1rem; }
+          .container .section-contacto .container-contact .form-data .boton:hover {
+            font-size: 1;
+            background-color: #805252; }
   .container footer {
     padding: 1rem;
     background-color: rgba(0, 0, 0, 0.9);
