@@ -24,10 +24,10 @@ body{
         display: flex;
         flex-direction: column;
         background-image:url(../img/main.png);
-        background-color: rgb(46, 44, 44);
+        background-color: $header-color;
         background-blend-mode: soft-light;
         background-position: center;
-        border-bottom: 2px solid #ffffff;
+        border-bottom: 2px solid $white-color;
 
         @media all and (max-width:400px){
             height: 30rem;
@@ -37,7 +37,7 @@ body{
         }
 
         .menu {
-            background-color: rgba(0, 0, 0, 0.7);
+            background-color: $fondo-color-2;
             display: flex; 
             justify-content: space-between;
             align-items: center;
@@ -46,13 +46,13 @@ body{
             @media all and (max-width:400px){
                 flex-direction: column;
                 justify-content: center;
-                background-color: rgba(0, 0, 0, 0.9);
+                background-color: $fondo-color-3;
                 height: 25rem;
             }
             @media all and (max-width:900px){
                 flex-direction: column;
                 justify-content: center;
-                background-color: rgba(0, 0, 0, 0.9);
+                background-color: $fondo-color-3;
                 height: 20rem;
             }
          
@@ -67,12 +67,10 @@ body{
                         height: 180px;
                         width: 180px;
                     }
-
                     @media all and (max-width:400px){
                         height: 0;
                         width: 0;
-                    }
-                   
+                    } 
                 }
     
                 nav{
@@ -88,10 +86,16 @@ body{
                         div{
                             a{
                                 position: relative;
-                                color: white;
+                                color: $white-color;
                                 text-decoration: none;
                                 font-size: 1.5rem;
                                 font-weight: 500;
+
+
+                                @media all and (max-width:400px){
+                                    bottom: 2rem;
+                                    text-align: center;
+                                }
 
                                 @media all and (max-width:900px){
                                     font-size: 1.5rem;
@@ -100,16 +104,13 @@ body{
                                     bottom: 2rem;
                                 }
 
-                                @media all and (max-width:400px){
-                                    bottom: 2rem;
-                                    text-align: center;
-                                }
+                                
                                
 
                                 &::after{
                                     content: "";
                                     position: absolute;
-                                    background-color: white;
+                                    background-color: $white-color;
                                     height: .2rem;
                                     width: 0;
                                     left: 0;
@@ -127,11 +128,11 @@ body{
                     flex-grow: 1;
                     text-align: center;
                         a{
-                           color: white;
+                           color: $white-color;
                            font-size: 1.5rem;
                            text-decoration: none;
                            border-radius: 1.5rem;
-                           border: 2px solid #ffffff;
+                           border: 2px solid $white-color;
                            padding: 1rem 1rem;
 
                            @media all and (max-width:400px){
@@ -143,13 +144,13 @@ body{
                            @media all and (max-width:900px){
                             font-size: 1.3rem;
                             position: relative;
-                            bottom: 1.2rem;
+                            top: 0.3rem;
                         }
                        
 
     
                                 &:hover{
-                                    background-color:#633030 ;
+                                    background-color: $text-color;
                                     transform: .1s all;
                                     font-weight: 600;
                                 }
@@ -170,8 +171,8 @@ body{
 
               h1{
                   padding: 2rem;
-                  color: #000000;
-                  border: solid 5px #633030;
+                  color: $black-color;
+                  border: solid 5px $text-color;
                   border-radius: 50%;
                   box-shadow: 0 5px 5px rgb(0, 0, 0,);
                   background-color: rgba(221, 216, 216, 0.9);
@@ -185,16 +186,16 @@ body{
      .section-historia{
         margin: 1rem;
         padding: 1rem;
-        background: #ada9a9;
-        border: 3px solid black;
+        background: $section-color;
+        border: 3px solid $black-color;
 
-        @media all and (max-width:400px){
+        @media all and (max-width:600px){
             margin: 0;
         }
 
             h2{
-                border-bottom: 1px black solid;
-                color: #633030;
+                border-bottom: 1px solid $black-color;
+                color: $text-color;
                 font-size: 2rem;
                 
                 @media all and (min-width:1800px){
@@ -204,7 +205,7 @@ body{
             h3{
                 text-align: center;
                 margin-top: 0.5rem;
-                color: #633030;
+                color: $text-color;
                 font-size: 2rem;
 
                 @media all and (min-width:1800px){
@@ -240,15 +241,15 @@ body{
 
                          img{
                              border-radius: 20%;
-                             border: 2px solid black;
+                             border: 2px solid $black-color;
                              box-shadow: 0 5px 5px rgb(0, 0, 0,);
                          }
                     }
                     .historia-parrafo{
                         width: 30rem;
                         text-align: center;
-                        border-bottom: 2px solid black;
-                        border-top: 2px solid black;
+                        border-bottom: 2px solid $black-color;
+                        border-top: 2px solid $black-color;
                         padding: 1rem;
 
 
@@ -283,16 +284,16 @@ body{
      .section-catalogo{
         margin: 1rem;
         padding: 1rem;
-        background: #ada9a9;
+        background: $section-color;
         border: 3px solid black;
 
-        @media all and (max-width:400px){
+        @media all and (max-width:600px){
             margin: 0;
         }
 
             h2{
-                border-bottom: 1px solid black;
-                color: #633030;
+                border-bottom: 1px solid $black-color;
+                color: $text-color;
                 font-size: 2rem;
                 margin-bottom: 2rem;
 
@@ -313,7 +314,7 @@ body{
                             height: 250px;
                             overflow: hidden;
                             margin: 1rem;
-                            border: 2px solid #000000;
+                            border: 2px solid $black-color;
                             border-radius: 10%;
 
                             @media all and (max-width:2300px){
@@ -330,7 +331,7 @@ body{
                             }
 
                             &:hover{
-                                border: 4px solid #ffffff;
+                                border: 4px solid $white-color;
                             }
                             &:hover .capa{
                                 transform: scale(1);
@@ -351,7 +352,7 @@ body{
                                     flex-direction: column;
                                     align-items: center;
                                     justify-content: center;
-                                    color: #ffffff;
+                                    color: $white-color;
                                     transform: scale(0);
                                     transition: .3s ease;
                                         h3{
@@ -362,16 +363,16 @@ body{
                                             font-size: 20px;
                                         }
                                         a{
-                                            color: #ffffff;
+                                            color: $white-color;
                                             margin-top: 1rem;
-                                            border: 2px solid #ffffff;
+                                            border: 2px solid $white-color;
                                             border-radius: 10%;
 
                                             text-decoration: none;
                                             padding: 0.5rem;
 
                                                 &:hover{
-                                                    background-color: #805252;
+                                                    background-color: $hover-color;
                                                 }
                                         } 
                                 }
@@ -381,16 +382,16 @@ body{
         .section-contacto{
             margin: 1rem;
             padding: 1rem;
-            background-color: #ada9a9;
-            border: 3px solid #000000;
+            background-color: $section-color;
+            border: 3px solid $black-color;
 
-            @media all and (max-width:400px){
+            @media all and (max-width:600px){
                 margin: 0;
             }
 
                 h2{
-                    color: #633030;
-                    border-bottom: 1px solid #000000;
+                    color: $text-color;
+                    border-bottom: 1px solid $black-color;
                     font-size: 2rem;
 
                     @media all and (min-width:1800px){
@@ -398,11 +399,16 @@ body{
                     }
                 }
                 h3{
-                    color: #633030;
+                    color: $text-color;
                     text-align: center;
                     font-size: 2rem;
                     margin-top: 0.5rem;
+
+                    @media all and (min-width:1800px){
+                        font-size: 3rem;
+                    }
                 }
+                
                 .container-contact{
                     margin-top: 3rem;
                     display: flex;
@@ -413,6 +419,10 @@ body{
                             display: flex;
                             flex-direction: column;
                             font-size: 1.3rem;
+
+                            @media all and (min-width:1800px){
+                                font-size: 2rem;
+                            }
 
                             @media all and (max-width:600px){
                                 position: relative;
@@ -426,31 +436,54 @@ body{
                         .form-data{
                             text-align: center;
                             padding: 2rem;
-                            background-color: rgba(0, 0, 0, 0.2);
-                            border: 1px solid #000000;
+                            background-color: $form-fondo;
+                            border: 1px solid $black-color;
                             border-radius: 20%;
-                                h3{
+                            
+                            @media all and (min-width:1800px){
+                                width: 30rem;
+                            }
+
+                                h4{
                                     text-align: center;
                                     margin-bottom: 2rem;
+                                    color:$text-color;
+                                    border-bottom: 1px solid $black-color;
+                                    font-size: 2rem;
                                 }
 
                                 ul{
                                     margin-bottom: 1rem;
                                         li{
                                             label{
-                                                    font-size: 1.1rem;
+                                                    font-size: 1.3rem;
                                                     font-weight: 600;
                                             }
+                                            input{
+                                                background-color: $form-fondo;
+                                                border: none;
+                                                border-bottom: 1px solid $black-color;
+                                                height: 2rem;
+                                                width: 15rem;
+
+                                                @media all and (min-width:400px){
+                                                    width: 20rem;
+                                                }
+                                            }
                                             .boton{
-                                                background-color: rgba(0, 0, 0, 0.2);
+                                                background-color: $form-fondo;
                                                 border-radius: 20%;
-                                                border: 1px solid #000000;
+                                                border: 1px solid $black-color;
                                                 font-size: 1rem;
-                                                font-weight: 600;
-                                                padding: 1rem;
+                                                font-weight: 700;
+                                                padding: 2rem;
+                                                width: 8rem;
+                                                    input{
+                                                        text-align: center;
+                                                    }
                                                     &:hover{
                                                         font-size: 1;
-                                                        background-color: #815858;
+                                                        background-color: $hover-color;
                                                     }
                                             }
                                         }
@@ -461,13 +494,13 @@ body{
         }
         footer {
             padding: 1rem;
-            background-color: rgba(0, 0, 0, 0.9);
+            background-color: $fondo-color-3;
             display: flex;
             justify-content: space-around;
             align-items: center;
-            border-top: 1px solid #ffffff;
+            border-top: 1px solid $white-color;
                 .redes{
-                    color: #ffffff;
+                    color: $white-color;
                     text-align: center;
                         h4{
                             margin-bottom: 1.5rem;
@@ -478,7 +511,7 @@ body{
                             }
                         }
                         a{
-                            color: #ffffff;
+                            color: $white-color;
                             text-decoration: none;
                             padding: 2px;
                                 .icon-facebook{
@@ -495,17 +528,17 @@ body{
                                      font-size: 2rem;
                                      margin: 1rem;
                                      padding: 0.2rem;
-                                     border: 2px solid white;
+                                     border: 2px solid $white-color;
                                      border-radius: 20%;
+
+                                     @media all and (max-width:400px){
+                                        font-size: 1rem;
+                                    }
 
                                      @media all and (max-width:600px){
                                         font-size: 1.5rem;
                                         margin: 0;
                                     }
-                                    @media all and (max-width:400px){
-                                        font-size: 1rem;
-                                    }
-
                                  }
                         }
                 }
@@ -526,7 +559,7 @@ body{
 
                 }
                 .info{
-                    color:#ffffff ;
+                    color:$white-color;
                     display: flex;
                     flex-direction: column;
 
