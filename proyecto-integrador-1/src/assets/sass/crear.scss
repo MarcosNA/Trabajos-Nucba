@@ -24,8 +24,11 @@
             padding: 2rem;
             font-size: 1.2rem;
 
+            @media all and (max-width: 600px){
+                padding: 1rem;
+            }
+
             @media all and (max-width:400px){
-                padding: 1.5rem;
                 font-size: 1rem;
             }
 
@@ -41,13 +44,13 @@
                     input{
                         background-color: rgba(0, 0, 0, 0.5);
                         border: none;
-                        border-bottom: 1px solid $white-color;
+                        border-bottom: 2px solid $white-color;
                         font-size: 1rem;
                         padding: 0.5rem;  
                         color: $white-color;
                             &:hover{
                                 background-color: rgba(221, 216, 216, 0.9);
-                                border: 2px solid $white-color;
+                                border-bottom: 2px solid $hover-color;
                                 color: $black-color;
                                 font-weight: 700;
                             }   
@@ -55,9 +58,8 @@
             }
             textarea{
                 font-weight: 700;
-                    &:hover{
-                        border: 3px solid $text-color;
-                    }
+                border: 3px solid $text-color;
+                background-color: $section-color;
             }  
             .genero{
                 background-color: rgba(0, 0, 0, 0.5);

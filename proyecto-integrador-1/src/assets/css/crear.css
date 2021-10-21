@@ -44,9 +44,11 @@ li {
     color: #ffff;
     padding: 2rem;
     font-size: 1.2rem; }
+    @media all and (max-width: 600px) {
+      .cuenta-container .form {
+        padding: 1rem; } }
     @media all and (max-width: 400px) {
       .cuenta-container .form {
-        padding: 1.5rem;
         font-size: 1rem; } }
     .cuenta-container .form h2 {
       border-bottom: 1px solid #ffffff;
@@ -59,19 +61,19 @@ li {
       .cuenta-container .form li input {
         background-color: rgba(0, 0, 0, 0.5);
         border: none;
-        border-bottom: 1px solid #ffffff;
+        border-bottom: 2px solid #ffffff;
         font-size: 1rem;
         padding: 0.5rem;
         color: #ffffff; }
         .cuenta-container .form li input:hover {
           background-color: rgba(221, 216, 216, 0.9);
-          border: 2px solid #ffffff;
+          border-bottom: 2px solid #805252;
           color: #000000;
           font-weight: 700; }
     .cuenta-container .form textarea {
-      font-weight: 700; }
-      .cuenta-container .form textarea:hover {
-        border: 3px solid #633030; }
+      font-weight: 700;
+      border: 3px solid #633030;
+      background-color: #ada9a9; }
     .cuenta-container .form .genero {
       background-color: rgba(0, 0, 0, 0.5);
       padding: 0.5rem; }

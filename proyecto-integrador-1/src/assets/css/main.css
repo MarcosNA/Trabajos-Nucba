@@ -145,9 +145,7 @@ li {
               position: relative;
               top: 0rem; } }
           .container header .menu .login a:hover {
-            background-color: #633030;
-            transform: .1s all;
-            font-weight: 600; }
+            background-color: #633030; }
     .container header .titulo {
       display: flex;
       height: 12rem;
@@ -345,20 +343,29 @@ li {
       background-color: rgba(0, 0, 0, 0.2);
       border: 1px solid #000000;
       border-radius: 20%; }
-      @media all and (min-width: 1800px) {
+      @media all and (max-width: 1800px) {
         .container .section-contacto .container-contact .form-data {
           width: 30rem; } }
+      @media all and (max-width: 800px) {
+        .container .section-contacto .container-contact .form-data {
+          padding: 1rem; } }
       .container .section-contacto .container-contact .form-data h4 {
         text-align: center;
         margin-bottom: 2rem;
         color: #633030;
         border-bottom: 1px solid #000000;
         font-size: 2rem; }
+        @media all and (max-width: 800px) {
+          .container .section-contacto .container-contact .form-data h4 {
+            font-size: 1.5rem; } }
       .container .section-contacto .container-contact .form-data ul {
         margin-bottom: 1rem; }
         .container .section-contacto .container-contact .form-data ul li label {
           font-size: 1.3rem;
           font-weight: 600; }
+          @media all and (max-width: 800px) {
+            .container .section-contacto .container-contact .form-data ul li label {
+              font-size: 1.1rem; } }
         .container .section-contacto .container-contact .form-data ul li input {
           background-color: rgba(0, 0, 0, 0.2);
           border: none;
@@ -369,7 +376,7 @@ li {
             background-color: rgba(221, 216, 216, 0.9);
             font-weight: 700;
             border: 1px solid #000000; }
-          @media all and (min-width: 400px) {
+          @media all and (min-width: 600px) {
             .container .section-contacto .container-contact .form-data ul li input {
               width: 20rem; } }
         .container .section-contacto .container-contact .form-data ul li textarea {

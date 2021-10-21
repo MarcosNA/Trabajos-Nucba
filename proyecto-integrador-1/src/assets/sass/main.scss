@@ -146,17 +146,8 @@
                             position: relative;
                             top: 0rem;
                         }
-
-                       
-
-                         
-                       
-
-    
                                 &:hover{
                                     background-color: $text-color;
-                                    transform: .1s all;
-                                    font-weight: 600;
                                 }
                         }
                 }
@@ -434,8 +425,11 @@
                             border: 1px solid $black-color;
                             border-radius: 20%;
                             
-                            @media all and (min-width:1800px){
+                            @media all and (max-width:1800px){
                                 width: 30rem;
+                            }
+                            @media all and (max-width: 800px){
+                                padding: 1rem;
                             }
 
                                 h4{
@@ -444,6 +438,10 @@
                                     color:$text-color;
                                     border-bottom: 1px solid $black-color;
                                     font-size: 2rem;
+
+                                    @media all and (max-width: 800px){
+                                        font-size: 1.5rem;
+                                    }
                                 }
 
                                 ul{
@@ -452,6 +450,10 @@
                                             label{
                                                     font-size: 1.3rem;
                                                     font-weight: 600;
+
+                                                    @media all and (max-width:800px){
+                                                        font-size: 1.1rem;
+                                                    }
                                             }
                                             input{
                                                 background-color: $form-fondo;
@@ -465,7 +467,7 @@
                                                         border: 1px solid $black-color;
                                                     }
 
-                                                @media all and (min-width:400px){
+                                                @media all and (min-width:600px){
                                                     width: 20rem;
                                                 }
                                             }
