@@ -78,37 +78,53 @@ li {
           .container header .menu .logo {
             height: 0;
             width: 0; } }
-      .container header .menu nav {
+      .container header .menu .icon-menu {
+        width: 100px;
+        height: 100px;
+        display: none; }
+        .container header .menu .icon-menu i {
+          color: white;
+          font-size: 4rem;
+          cursor: pointer; }
+        @media all and (max-width: 500px) {
+          .container header .menu .icon-menu {
+            display: inline-flex; } }
+      .container header .menu .navbar {
         flex-grow: 2;
         display: flex;
         justify-content: space-evenly; }
         @media all and (max-width: 400px) {
-          .container header .menu nav {
-            flex-direction: column;
-            text-align: center; } }
-        .container header .menu nav div a {
+          .container header .menu .navbar {
+            position: fixed;
+            width: 100vh;
+            height: calc(100% - 65px);
+            top: -100vh;
+            text-align: center;
+            transition: all .4s;
+            flex-direction: column; } }
+        .container header .menu .navbar div a {
           position: relative;
           color: #ffffff;
           text-decoration: none;
           font-size: 1.5rem;
           font-weight: 500; }
           @media all and (max-width: 900px) {
-            .container header .menu nav div a {
+            .container header .menu .navbar div a {
               font-size: 1.5rem;
               margin: 0.5rem;
               position: relative;
               bottom: 2rem; } }
           @media all and (max-width: 600px) {
-            .container header .menu nav div a {
+            .container header .menu .navbar div a {
               font-size: 1.1rem;
               margin: 0.5rem;
               position: relative;
               bottom: 2rem; } }
           @media all and (max-width: 400px) {
-            .container header .menu nav div a {
+            .container header .menu .navbar div a {
               bottom: 2rem;
               text-align: center; } }
-          .container header .menu nav div a::after {
+          .container header .menu .navbar div a::after {
             content: "";
             position: absolute;
             background-color: #ffffff;
@@ -116,9 +132,11 @@ li {
             width: 0;
             left: 0;
             bottom: 0; }
-          .container header .menu nav div a:hover::after {
+          .container header .menu .navbar div a:hover::after {
             width: 100%;
             transition: .5s ease-in-out; }
+      .container header .menu .navbar.show {
+        top: 65px; }
       .container header .menu .login {
         flex-grow: 1;
         text-align: center; }
@@ -141,11 +159,17 @@ li {
               top: -2rem; } }
           @media all and (max-width: 400px) {
             .container header .menu .login a {
-              font-size: 1.3rem;
-              position: relative;
-              top: 0rem; } }
+              position: fixed;
+              width: 100vh;
+              height: calc(100% - 65px);
+              top: -100vh;
+              text-align: center;
+              transition: all .4s;
+              flex-direction: column; } }
           .container header .menu .login a:hover {
             background-color: #633030; }
+      .container header .menu .login.show {
+        top: 65px; }
     .container header .titulo {
       display: flex;
       height: 12rem;
@@ -254,7 +278,7 @@ li {
       height: 250px;
       overflow: hidden;
       margin: 1rem;
-      border: 2px solid #000000;
+      border: 4px solid rgba(0, 0, 0, 0.2);
       border-radius: 10%; }
       @media all and (max-width: 2300px) {
         .container .section-catalogo .catalogo-container .image-box {
