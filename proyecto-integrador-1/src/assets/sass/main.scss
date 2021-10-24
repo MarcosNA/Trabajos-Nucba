@@ -20,33 +20,18 @@
         background-position: center;
         border-bottom: 2px solid $white-color;
 
-        @media all and (max-width:400px){
-            height: 30rem;
-        }
-        @media all and (max-width:900px){
-            height: 30rem;
-        }
-
         .menu {
             background-color: $fondo-color-2;
             display: flex; 
-            justify-content: space-between;
+            justify-content: space-around;
             align-items: center;
             border-bottom: 2px solid rgba(240, 238, 238, 0.9);
 
-            @media all and (max-width:400px){
-                flex-direction: column;
-                justify-content: center;
-                background-color: $fondo-color-3;
-                height: 25rem;
+            @media all and (max-width: 1000px){
+                background-color: $fondo-color-1;
             }
-            @media all and (max-width:900px){
-                flex-direction: column;
-                justify-content: center;
-                background-color: $fondo-color-3;
-                height: 20rem;
-            }
-         
+            
+
     
                 .logo{
                     flex-grow: 1;
@@ -54,73 +39,91 @@
                     width: 180px;
                     height: 180px;
 
-                    @media all and (max-width:600px){
+                    @media all and (max-width:1000px){
+                        justify-content: space-between;
+                        flex-grow: 0;
                         height: 180px;
                         width: 180px;
                     }
-                    @media all and (max-width:400px){
-                        height: 0;
-                        width: 0;
-                    } 
+
+                    @media all and (max-width: 600px){
+                        width: 130px;
+                        height: 130px;
+                    }
+                   
                 }
 
-                .icon-menu{
+                .btn-nav{
                     width: 100px;
                     height: 100px;
                     display: none;
+                    color: #e0d5ca;
+                    font-size: 4rem;
+                    cursor: pointer;
 
-                    i{
-                        color: white;
-                        font-size: 4rem;
-                        cursor: pointer;
-                    }
-
-                    @media all and (max-width: 500px){
+                    @media all and (max-width: 1000px){
                         display: inline-flex;
+                    }
+                    @media all and (max-width: 600px){
+                        font-size: 3rem;
+                        position: relative;
+                        left: 4rem;
+                        top: 15px;
+                        
+                    }
+                    
+                }
+
+                .buy-cart{
+                    position: relative;
+                    top: 15px;
+                    right: 50px;
+                    height: 100px;
+                    width: 100px;
+                    color: #e0d5ca;
+                    cursor: pointer;
+                    font-size: 4rem;
+                        &:hover{
+                            color: $text-color;
+                        }
+
+                    @media all and (max-width: 600px){
+                        font-size: 3rem;
+                        position: relative;
+                        left: 2rem;
+
                     }
                 }
     
                 .navbar{
-                    flex-grow: 2;
+                    flex-grow: 20;
                     display: flex;
                     justify-content: space-evenly;
 
-                    @media all and (max-width:400px) {
+                    @media all and (max-width:1000px) {
                         position: fixed;
-                        width: 100vh;
-                        height: calc(100% - 65px);
-                        top: -100vh;
+                        width: 100vw;
+                        height: calc(100% -  10rem);
+                        top: 21.5vh;
                         text-align: center;
                         transition: all .4s;
                         flex-direction: column;
+                        background-color: $black-color
                     }
+                    @media all and (max-width: 600px){
+                        top: 15.5vh;
+                    }
+                    
 
                         div{
-                            a{
+                            .a-nav{
                                 position: relative;
                                 color: $white-color;
                                 text-decoration: none;
                                 font-size: 1.5rem;
                                 font-weight: 500;
 
-                                @media all and (max-width:900px){
-                                    font-size: 1.5rem;
-                                    margin: 0.5rem;
-                                    position: relative;
-                                    bottom: 2rem;
-                                }
-
-                                @media all and (max-width:600px){
-                                    font-size: 1.1rem;
-                                    margin: 0.5rem;
-                                    position: relative;
-                                    bottom: 2rem;
-                                }
-
-                                @media all and (max-width:400px){
-                                    bottom: 2rem;
-                                    text-align: center;
-                                }
+                        
 
                                 &::after{
                                     content: "";
@@ -137,54 +140,29 @@
                                 }
                             } 
                         }
+                        .login{
+                    
+                            .buttom-sesion{
+                               color: $white-color;
+                               font-size: 1.5rem;
+                               text-decoration: none;
+                               border-radius: 1.5rem;
+                               border: 2px solid $white-color;
+                               padding: 1rem 1rem;
+                                    &:hover{
+                                        background-color: $text-color;
+                                    }
+                            }
+                    }
+
+                    
                 }
 
-                .navbar.show{
-                    top: 65px;
+                nav.show{
+                    top: -100rem;
                 }
-    
-                .login{
-                    flex-grow: 1;
-                    text-align: center;
-                        a{
-                           color: $white-color;
-                           font-size: 1.5rem;
-                           text-decoration: none;
-                           border-radius: 1.5rem;
-                           border: 2px solid $white-color;
-                           padding: 1rem 1rem;
-
-                           @media all and (max-width:900px){
-                            font-size: 1.3rem;
-                            position: relative;
-                            top: -1rem;
-                        }
-
-                        @media all and (max-width:700px){
-                            font-size: 1.3rem;
-                            position: relative;
-                            top: -2rem;
-                        }
-
-                           @media all and (max-width:400px){
-                            position: fixed;
-                            width: 100vh;
-                            height: calc(100% - 65px);
-                            top: -100vh;
-                            text-align: center;
-                            transition: all .4s;
-                            flex-direction: column;
-                            
-                        }
-                                &:hover{
-                                    background-color: $text-color;
-                                }
-                        }
-                }
-                .login.show{
-                    top: 65px;
-                }
-          }
+   
+        }
 
           .titulo{
               display: flex;
@@ -209,9 +187,198 @@
           }
 
     }
-    
+}
 
-     .section-historia{
+.section-historia{
+        
+
+    @media all and (max-width:600px){
+        margin: 0;
+    }
+
+        h2{
+            border-bottom: 1px solid $black-color;
+            color: $text-color;
+            font-size: 2rem;
+            
+            @media all and (min-width:1800px){
+                font-size: 3rem;
+            }
+        }
+        h3{
+            text-align: center;
+            margin-top: 0.5rem;
+            color: $text-color;
+            font-size: 2rem;
+
+            @media all and (min-width:1800px){
+                font-size: 3rem;
+            }
+        }
+        .historia-multimedia{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 2rem;
+
+            @media all and (max-width:800px){
+                flex-direction: column;
+            }
+
+
+                .historia-foto{
+                    flex: 0 0 1;
+                     width: 400px;
+                     height: auto;
+
+                     @media all and (min-width:1800px){
+                        width: 500px;
+                    }
+
+                     @media all and (max-width:800px){
+                        width: 350px;
+                    }
+                    @media all and (max-width:400px){
+                        width: 300px;
+                    }
+
+                     img{
+                         border-radius: 20%;
+                         border: 2px solid $black-color;
+                         box-shadow: 0 5px 5px rgb(0, 0, 0,);
+                     }
+                }
+                .historia-parrafo{
+                    width: 30rem;
+                    text-align: center;
+                    border-bottom: 2px solid $black-color;
+                    border-top: 2px solid $black-color;
+                    padding: 1rem;
+
+
+                    @media all and (min-width:1800px){
+                        width: 60rem;
+                        font-size: 1.5rem;
+                    }
+
+                    @media all and (min-width:1300px){
+                        font-size: 1.3rem;
+                        margin-top: 1rem;
+                        padding: 0.5rem;
+                    }
+
+                    @media all and (max-width:800px){
+                        font-size: 1.3rem;
+                        margin-top: 1rem;
+                        padding: 0.5rem;
+                    }
+
+                    @media all and (max-width:600px){
+                        font-size:1rem;
+                        width: 20rem;
+                        padding: 0.5rem;
+                        margin-top: 1rem;
+                    }  
+                }
+        }
+         
+ }
+ 
+ .section-catalogo{
+    
+    @media all and (max-width:600px){
+        margin: 0;
+    }
+
+        h2{
+            border-bottom: 1px solid $black-color;
+            color: $text-color;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+
+            @media all and (min-width:1800px){
+                font-size: 3rem;
+            }
+        }
+     
+        .catalogo-container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            margin: auto;
+                     .image-box{
+                        position: relative;
+                        width: 250px;
+                        height: 250px;
+                        overflow: hidden;
+                        margin: 1rem;
+                        border: 4px solid $form-fondo;
+                        border-radius: 10%;
+
+                        @media all and (max-width:2300px){
+                            width: 420px;
+                        }
+
+                        @media all and (max-width:1500px){
+                            width: 250px;
+                        }
+
+                        @media all and (max-width:600px){
+                            width: 220px;
+                            height: 220px;
+                        }
+
+                        &:hover{
+                            border: 4px solid $white-color;
+                        }
+                        &:hover .capa{
+                            transform: scale(1);
+                        }
+                    
+                             img{
+                                 width: 100%;
+                                 height: 100%;
+                             }
+                             .capa{
+                                position:absolute;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                                background: rgba(0, 0, 0, 0.7);
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                justify-content: center;
+                                color: $white-color;
+                                transform: scale(0);
+                                transition: .3s ease;
+                                    h3{
+                                        font-size: 30px;
+                                    }
+
+                                    span{
+                                        font-size: 20px;
+                                    }
+                                    a{
+                                        color: $white-color;
+                                        margin-top: 1rem;
+                                        border: 2px solid $white-color;
+                                        border-radius: 10%;
+
+                                        text-decoration: none;
+                                        padding: 0.5rem;
+
+                                            &:hover{
+                                                background-color: $hover-color;
+                                            }
+                                    } 
+                            }
+                     }           
+             }
+        }
+    .section-contacto{
         
 
         @media all and (max-width:600px){
@@ -219,400 +386,213 @@
         }
 
             h2{
-                border-bottom: 1px solid $black-color;
                 color: $text-color;
+                border-bottom: 1px solid $black-color;
                 font-size: 2rem;
-                
+
                 @media all and (min-width:1800px){
                     font-size: 3rem;
                 }
             }
             h3{
+                color: $text-color;
                 text-align: center;
+                font-size: 2rem;
                 margin-top: 0.5rem;
-                color: $text-color;
-                font-size: 2rem;
 
                 @media all and (min-width:1800px){
                     font-size: 3rem;
                 }
             }
-            .historia-multimedia{
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
-                padding: 2rem;
-
-                @media all and (max-width:800px){
-                    flex-direction: column;
-                }
-
-
-                    .historia-foto{
-                        flex: 0 0 1;
-                         width: 400px;
-                         height: auto;
-
-                         @media all and (min-width:1800px){
-                            width: 500px;
-                        }
-
-                         @media all and (max-width:800px){
-                            width: 350px;
-                        }
-                        @media all and (max-width:400px){
-                            width: 300px;
-                        }
-
-                         img{
-                             border-radius: 20%;
-                             border: 2px solid $black-color;
-                             box-shadow: 0 5px 5px rgb(0, 0, 0,);
-                         }
-                    }
-                    .historia-parrafo{
-                        width: 30rem;
-                        text-align: center;
-                        border-bottom: 2px solid $black-color;
-                        border-top: 2px solid $black-color;
-                        padding: 1rem;
-
-
-                        @media all and (min-width:1800px){
-                            width: 60rem;
-                            font-size: 1.5rem;
-                        }
-
-                        @media all and (min-width:1300px){
-                            font-size: 1.3rem;
-                            margin-top: 1rem;
-                            padding: 0.5rem;
-                        }
-
-                        @media all and (max-width:800px){
-                            font-size: 1.3rem;
-                            margin-top: 1rem;
-                            padding: 0.5rem;
-                        }
-
-                        @media all and (max-width:600px){
-                            font-size:1rem;
-                            width: 20rem;
-                            padding: 0.5rem;
-                            margin-top: 1rem;
-                        }  
-                    }
-            }
-             
-     }
-     
-     .section-catalogo{
-        
-        @media all and (max-width:600px){
-            margin: 0;
-        }
-
-            h2{
-                border-bottom: 1px solid $black-color;
-                color: $text-color;
-                font-size: 2rem;
-                margin-bottom: 2rem;
-
-                @media all and (min-width:1800px){
-                    font-size: 3rem;
-                }
-            }
-         
-            .catalogo-container{
+            
+            .container-contact{
+                margin-top: 3rem;
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-around;
                 align-items: center;
-                margin: auto;
-                         .image-box{
+                    .datos{
+                        display: flex;
+                        flex-direction: column;
+                        font-size: 1.3rem;
+
+                        @media all and (min-width:1800px){
+                            font-size: 2rem;
+                        }
+
+                        @media all and (max-width:600px){
                             position: relative;
-                            width: 250px;
-                            height: 250px;
-                            overflow: hidden;
-                            margin: 1rem;
-                            border: 4px solid $form-fondo;
-                            border-radius: 10%;
+                            bottom: 1.5rem;
+                        }
 
-                            @media all and (max-width:2300px){
-                                width: 420px;
+                            i{
+                                margin: 1rem;
                             }
-
-                            @media all and (max-width:1500px){
-                                width: 250px;
-                            }
-
-                            @media all and (max-width:600px){
-                                width: 220px;
-                                height: 220px;
-                            }
-
-                            &:hover{
-                                border: 4px solid $white-color;
-                            }
-                            &:hover .capa{
-                                transform: scale(1);
-                            }
+                    }
+                    .form-data{
+                        text-align: center;
+                        padding: 2rem;
+                        background-color: $form-fondo;
+                        border: 1px solid $black-color;
+                        border-radius: 20%;
                         
-                                 img{
-                                     width: 100%;
-                                     height: 100%;
-                                 }
-                                 .capa{
-                                    position:absolute;
-                                    top: 0;
-                                    left: 0;
-                                    width: 100%;
-                                    height: 100%;
-                                    background: rgba(0, 0, 0, 0.7);
-                                    display: flex;
-                                    flex-direction: column;
-                                    align-items: center;
-                                    justify-content: center;
-                                    color: $white-color;
-                                    transform: scale(0);
-                                    transition: .3s ease;
-                                        h3{
-                                            font-size: 30px;
-                                        }
+                        @media all and (max-width:1800px){
+                            width: 30rem;
+                        }
+                        @media all and (max-width: 800px){
+                            padding: 1rem;
+                        }
 
-                                        span{
-                                            font-size: 20px;
-                                        }
-                                        a{
-                                            color: $white-color;
-                                            margin-top: 1rem;
-                                            border: 2px solid $white-color;
-                                            border-radius: 10%;
-
-                                            text-decoration: none;
-                                            padding: 0.5rem;
-
-                                                &:hover{
-                                                    background-color: $hover-color;
-                                                }
-                                        } 
-                                }
-                         }           
-                 }
-            }
-        .section-contacto{
-            
-
-            @media all and (max-width:600px){
-                margin: 0;
-            }
-
-                h2{
-                    color: $text-color;
-                    border-bottom: 1px solid $black-color;
-                    font-size: 2rem;
-
-                    @media all and (min-width:1800px){
-                        font-size: 3rem;
-                    }
-                }
-                h3{
-                    color: $text-color;
-                    text-align: center;
-                    font-size: 2rem;
-                    margin-top: 0.5rem;
-
-                    @media all and (min-width:1800px){
-                        font-size: 3rem;
-                    }
-                }
-                
-                .container-contact{
-                    margin-top: 3rem;
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: space-around;
-                    align-items: center;
-                        .datos{
-                            display: flex;
-                            flex-direction: column;
-                            font-size: 1.3rem;
-
-                            @media all and (min-width:1800px){
+                            h4{
+                                text-align: center;
+                                margin-bottom: 2rem;
+                                color:$text-color;
+                                border-bottom: 1px solid $black-color;
                                 font-size: 2rem;
-                            }
 
-                            @media all and (max-width:600px){
-                                position: relative;
-                                bottom: 1.5rem;
-                            }
-
-                                i{
-                                    margin: 1rem;
-                                }
-                        }
-                        .form-data{
-                            text-align: center;
-                            padding: 2rem;
-                            background-color: $form-fondo;
-                            border: 1px solid $black-color;
-                            border-radius: 20%;
-                            
-                            @media all and (max-width:1800px){
-                                width: 30rem;
-                            }
-                            @media all and (max-width: 800px){
-                                padding: 1rem;
-                            }
-
-                                h4{
-                                    text-align: center;
-                                    margin-bottom: 2rem;
-                                    color:$text-color;
-                                    border-bottom: 1px solid $black-color;
-                                    font-size: 2rem;
-
-                                    @media all and (max-width: 800px){
-                                        font-size: 1.5rem;
-                                    }
-                                }
-
-                                ul{
-                                    margin-bottom: 1rem;
-                                        li{
-                                            label{
-                                                    font-size: 1.3rem;
-                                                    font-weight: 600;
-
-                                                    @media all and (max-width:800px){
-                                                        font-size: 1.1rem;
-                                                    }
-                                            }
-                                            input{
-                                                background-color: $form-fondo;
-                                                border: none;
-                                                border-bottom: 1px solid $black-color;
-                                                height: 2rem;
-                                                width: 15rem;
-                                                    &:hover{
-                                                        background-color: rgba(221, 216, 216, 0.9);
-                                                        font-weight: 700;
-                                                        border: 1px solid $black-color;
-                                                    }
-
-                                                @media all and (min-width:600px){
-                                                    width: 20rem;
-                                                }
-                                            }
-                                            textarea{
-                                                background-color: $form-fondo;
-                                                border: 1px solid $black-color;
-                                                    &:hover{
-                                                        background-color: rgba(221, 216, 216, 0.9);
-                                                        font-weight: 700;
-                                                    }
-                                            }
-                                        }
-                                } 
-                                .boton{
-                                    background-color: $form-fondo;
-                                    border-radius: 20%;
-                                    border: 1px solid $black-color;
+                                @media all and (max-width: 800px){
                                     font-size: 1.5rem;
-                                    font-weight: 600;
-                                    padding: 1rem;                                    
-                                        &:hover{
-                                            font-size: 1;
-                                            background-color: $hover-color;
-                                        }
-                                }   
-                        }
-                }     
-        }
-        footer {
-            padding: 1rem;
-            background-color: $fondo-color-3;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            border-top: 1px solid $white-color;
-                .redes{
-                    color: $white-color;
-                    text-align: center;
-
-                    @media all and (max-width:600px){
-                        width: 200px;;
-                    }
-
-                   
-                        h4{
-                            margin-bottom: 1.5rem;
-                            font-size: 1.5rem;
-
-                            @media all and (max-width:600px){
-                                font-size: 1rem;
+                                }
                             }
-                        }
-                        a{
-                            color: $white-color;
-                            text-decoration: none;
-                            padding: 2px;
-                                .icon-facebook{
-                                    &:hover{
-                                        background-color: #3b5998;
-                                    }
-                                }
-                                .icon-instagram{
-                                    &:hover{
-                                        background-color: #dd2a7b;
-                                    }
-                                }
 
-                                i{
-                                     font-size: 2rem;
-                                     margin: 1rem;
-                                     padding: 0.2rem;
-                                     border: 2px solid $white-color;
-                                     border-radius: 20%;
+                            ul{
+                                margin-bottom: 1rem;
+                                    li{
+                                        label{
+                                                font-size: 1.3rem;
+                                                font-weight: 600;
 
-                                     @media all and (max-width:600px){
-                                        font-size: 1.5rem;
-                                        border: none;
+                                                @media all and (max-width:800px){
+                                                    font-size: 1.1rem;
+                                                }
+                                        }
+                                        input{
+                                            background-color: $form-fondo;
+                                            border: none;
+                                            border-bottom: 1px solid $black-color;
+                                            height: 2rem;
+                                            width: 15rem;
+                                                &:hover{
+                                                    background-color: rgba(221, 216, 216, 0.9);
+                                                    font-weight: 700;
+                                                    border: 1px solid $black-color;
+                                                }
+
+                                            @media all and (min-width:600px){
+                                                width: 20rem;
+                                            }
+                                        }
+                                        textarea{
+                                            background-color: $form-fondo;
+                                            border: 1px solid $black-color;
+                                                &:hover{
+                                                    background-color: rgba(221, 216, 216, 0.9);
+                                                    font-weight: 700;
+                                                }
+                                        }
                                     }
-                                 }
-                        }
-                }
-                .logo{
-                    height: 180px;
-                    width:180px;
-                    
-                    @media all and (max-width:600px){
-                        position: relative;
-                        left: 0.3rem;
-                        top: 2rem
+                            } 
+                            .boton{
+                                background-color: $form-fondo;
+                                border-radius: 20%;
+                                border: 1px solid $black-color;
+                                font-size: 1.5rem;
+                                font-weight: 600;
+                                padding: 1rem;                                    
+                                    &:hover{
+                                        font-size: 1;
+                                        background-color: $hover-color;
+                                    }
+                            }   
                     }
+            }     
+    }
+    footer {
+        padding: 1rem;
+        background-color: $fondo-color-3;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-top: 1px solid $white-color;
+            .redes{
+                color: $white-color;
+                text-align: center;
 
+                @media all and (max-width:600px){
+                    width: 200px;;
+                }
+
+               
+                    h4{
+                        margin-bottom: 1.5rem;
+                        font-size: 1.5rem;
+
+                        @media all and (max-width:600px){
+                            font-size: 1rem;
+                        }
+                    }
                     a{
-                        height: 100%;
-                        width: 100%;
+                        color: $white-color;
+                        text-decoration: none;
+                        padding: 2px;
+                            .icon-facebook{
+                                &:hover{
+                                    background-color: #3b5998;
+                                }
+                            }
+                            .icon-instagram{
+                                &:hover{
+                                    background-color: #dd2a7b;
+                                }
+                            }
+
+                            i{
+                                 font-size: 2rem;
+                                 margin: 1rem;
+                                 padding: 0.2rem;
+                                 border: 2px solid $white-color;
+                                 border-radius: 20%;
+
+                                 @media all and (max-width:600px){
+                                    font-size: 1.5rem;
+                                    border: none;
+                                }
+                             }
                     }
-
+            }
+            .logo{
+                height: 180px;
+                width:180px;
+                
+                @media all and (max-width:600px){
+                    position: relative;
+                    left: 0.3rem;
+                    top: 2rem
                 }
-                .info{
-                    color:$white-color;
-                    display: flex;
-                    flex-direction: column;
-                    font-size: 1.5rem;
 
-                    @media all and (max-width:800px){
-                        position: relative;
-                        left: 1rem;
-                        font-size: 0.8rem;
-                    }
-
+                a{
+                    height: 100%;
+                    width: 100%;
                 }
-        }
-     }
+
+            }
+            .info{
+                color:$white-color;
+                display: flex;
+                flex-direction: column;
+                font-size: 1.5rem;
+
+                @media all and (max-width:800px){
+                    position: relative;
+                    left: 1rem;
+                    font-size: 0.8rem;
+                }
+
+            }
+    }
+ 
     
+
+
 
 
