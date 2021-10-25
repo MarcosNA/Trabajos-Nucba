@@ -39,6 +39,11 @@
                     width: 180px;
                     height: 180px;
 
+                    @media all and (max-width: 1200px){
+                        height: 150px;
+                        width: 150px;
+                    }
+
                     @media all and (max-width:1000px){
                         justify-content: space-between;
                         flex-grow: 0;
@@ -50,25 +55,27 @@
                         width: 130px;
                         height: 130px;
                     }
+
+                    @media all and (max-width: 450px){
+                        width: 110px;
+                        position: relative;
+                        right: 2rem;
+                        top: 1rem;
+                    }
                    
                 }
 
                 .btn-nav{
-                    width: 100px;
-                    height: 100px;
                     display: none;
                     color: #e0d5ca;
-                    font-size: 4rem;
+                    font-size: 3rem;
                     cursor: pointer;
+                    width: max-content;
 
                     @media all and (max-width: 1000px){
                         display: inline-flex;
                     }
                     @media all and (max-width: 600px){
-                        font-size: 3rem;
-                        position: relative;
-                        left: 4rem;
-                        top: 15px;
                         
                     }
                     
@@ -76,22 +83,31 @@
 
                 .buy-cart{
                     position: relative;
-                    top: 15px;
                     right: 50px;
-                    height: 100px;
-                    width: 100px;
                     color: #e0d5ca;
                     cursor: pointer;
-                    font-size: 4rem;
+                    font-size: 3rem;
+                    width: max-content;
                         &:hover{
                             color: $text-color;
                         }
 
-                    @media all and (max-width: 600px){
+                    @media all and (max-width:1200px){
+                        font-size: 2.5rem;
+                    }
+                    
+                    @media all and (max-width: 1000px){
                         font-size: 3rem;
-                        position: relative;
-                        left: 2rem;
+                    }
 
+                    @media all and (max-width: 600px){
+                        position: relative;
+                       right: 2rem;
+                       top: 0.5rem;
+                    }
+
+                    @media all and (max-width: 450px){
+                        font-size: 2.5rem;
                     }
                 }
     
@@ -123,6 +139,10 @@
                                 font-size: 1.5rem;
                                 font-weight: 500;
 
+                                @media all and (max-width: 1200px){
+                                    font-size: 1.2rem;
+                                }
+
                         
 
                                 &::after{
@@ -152,6 +172,10 @@
                                     &:hover{
                                         background-color: $text-color;
                                     }
+
+                                    @media all and ( max-width: 1200px){
+                                        font-size: 1.2rem;
+                                    }
                             }
                     }
 
@@ -171,7 +195,7 @@
               align-items: center;
               font-size: 1.5rem;
 
-              @media all and (max-width:400px){
+              @media all and (max-width:450px){
                 font-size: 1rem;
             }
 
@@ -238,7 +262,7 @@
                      @media all and (max-width:800px){
                         width: 350px;
                     }
-                    @media all and (max-width:400px){
+                    @media all and (max-width:450px){
                         width: 300px;
                     }
 

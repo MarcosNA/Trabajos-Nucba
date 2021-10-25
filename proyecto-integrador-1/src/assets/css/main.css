@@ -59,6 +59,10 @@ li {
         text-align: center;
         width: 180px;
         height: 180px; }
+        @media all and (max-width: 1200px) {
+          .container header .menu .logo {
+            height: 150px;
+            width: 150px; } }
         @media all and (max-width: 1000px) {
           .container header .menu .logo {
             justify-content: space-between;
@@ -69,38 +73,44 @@ li {
           .container header .menu .logo {
             width: 130px;
             height: 130px; } }
+        @media all and (max-width: 450px) {
+          .container header .menu .logo {
+            width: 110px;
+            position: relative;
+            right: 2rem;
+            top: 1rem; } }
       .container header .menu .btn-nav {
-        width: 100px;
-        height: 100px;
         display: none;
         color: #e0d5ca;
-        font-size: 4rem;
-        cursor: pointer; }
+        font-size: 3rem;
+        cursor: pointer;
+        width: max-content; }
         @media all and (max-width: 1000px) {
           .container header .menu .btn-nav {
             display: inline-flex; } }
-        @media all and (max-width: 600px) {
-          .container header .menu .btn-nav {
-            font-size: 3rem;
-            position: relative;
-            left: 4rem;
-            top: 15px; } }
       .container header .menu .buy-cart {
         position: relative;
-        top: 15px;
         right: 50px;
-        height: 100px;
-        width: 100px;
         color: #e0d5ca;
         cursor: pointer;
-        font-size: 4rem; }
+        font-size: 3rem;
+        width: max-content; }
         .container header .menu .buy-cart:hover {
           color: #633030; }
+        @media all and (max-width: 1200px) {
+          .container header .menu .buy-cart {
+            font-size: 2.5rem; } }
+        @media all and (max-width: 1000px) {
+          .container header .menu .buy-cart {
+            font-size: 3rem; } }
         @media all and (max-width: 600px) {
           .container header .menu .buy-cart {
-            font-size: 3rem;
             position: relative;
-            left: 2rem; } }
+            right: 2rem;
+            top: 0.5rem; } }
+        @media all and (max-width: 450px) {
+          .container header .menu .buy-cart {
+            font-size: 2.5rem; } }
       .container header .menu .navbar {
         flex-grow: 20;
         display: flex;
@@ -124,6 +134,9 @@ li {
           text-decoration: none;
           font-size: 1.5rem;
           font-weight: 500; }
+          @media all and (max-width: 1200px) {
+            .container header .menu .navbar div .a-nav {
+              font-size: 1.2rem; } }
           .container header .menu .navbar div .a-nav::after {
             content: "";
             position: absolute;
@@ -144,6 +157,9 @@ li {
           padding: 1rem 1rem; }
           .container header .menu .navbar .login .buttom-sesion:hover {
             background-color: #633030; }
+          @media all and (max-width: 1200px) {
+            .container header .menu .navbar .login .buttom-sesion {
+              font-size: 1.2rem; } }
       .container header .menu nav.show {
         top: -100rem; }
     .container header .titulo {
@@ -152,7 +168,7 @@ li {
       justify-content: center;
       align-items: center;
       font-size: 1.5rem; }
-      @media all and (max-width: 400px) {
+      @media all and (max-width: 450px) {
         .container header .titulo {
           font-size: 1rem; } }
       .container header .titulo h1 {
@@ -202,7 +218,7 @@ li {
     @media all and (max-width: 800px) {
       .section-historia .historia-multimedia .historia-foto {
         width: 350px; } }
-    @media all and (max-width: 400px) {
+    @media all and (max-width: 450px) {
       .section-historia .historia-multimedia .historia-foto {
         width: 300px; } }
     .section-historia .historia-multimedia .historia-foto img {
