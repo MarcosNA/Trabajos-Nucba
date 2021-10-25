@@ -75,10 +75,10 @@ li {
             height: 130px; } }
         @media all and (max-width: 450px) {
           .container header .menu .logo {
-            width: 110px;
+            width: 125px;
             position: relative;
-            right: 2rem;
-            top: 1rem; } }
+            right: 1.7rem;
+            top: 0.5rem; } }
       .container header .menu .btn-nav {
         display: none;
         color: #e0d5ca;
@@ -127,8 +127,8 @@ li {
             background-color: #000000; } }
         @media all and (max-width: 600px) {
           .container header .menu .navbar {
-            top: 15.5vh;
-            height: calc(100% - 8rem); } }
+            top: 20.5vh;
+            height: calc(100% - 6rem); } }
         .container header .menu .navbar div .a-nav {
           position: relative;
           color: #ffffff;
