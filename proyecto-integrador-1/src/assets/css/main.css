@@ -127,8 +127,8 @@ li {
             background-color: #000000; } }
         @media all and (max-width: 600px) {
           .container header .menu .navbar {
-            top: 20.5vh;
-            height: calc(100% - 6rem); } }
+            top: 15.5vh;
+            height: calc(100% - 132px); } }
         .container header .menu .navbar div .a-nav {
           position: relative;
           color: #ffffff;
