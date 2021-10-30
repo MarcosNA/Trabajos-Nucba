@@ -9,20 +9,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-        .logo{
-            width: 250px;
-            height: 250px;
-            border-radius: 20%;
-                
-        }
+       
         .form{
             text-align: center;
             background-color: rgba(0, 0, 0, 0.8);
             border: 2px solid #ffffff;
             border-radius: 20%;
             color: #ffff;
-            padding: 5rem;
+            padding: 3rem;
             font-size: 3rem;
+            width: 450px;
 
             @media all and (max-width: 600px){
                 padding: 2rem;
@@ -44,25 +40,66 @@
                 font-size: 1.7rem;
             }
             ul{
+
                 margin-bottom: 1rem;
                     label{
                         font-size: 1.5rem;
                     }
-                    input{
-                        background-color: rgba(0, 0, 0, 0.5);
-                        border: none;
-                        border-bottom: 2px solid #ffffff;
-                        font-size: 1rem;
-                        font-weight: 700;
-                        padding: 0.5rem;
-                        color: $white-color;
-                            &:hover{
-                                
-                                background-color: rgba(221, 216, 216, 0.9);
-                                border-bottom: 2px solid $hover-color;
-                                color: $black-color;
-                            }
-                    }   
+                    .form-data{
+                        input{
+                            background-color: rgba(0, 0, 0, 0.5);
+                            border: none;
+                            border-bottom: 2px solid #ffffff;
+                            font-size: 1rem;
+                            font-weight: 700;
+                            padding: 0.3rem;
+                            color: $white-color;
+                                &:hover{
+                                    
+                                    background-color: rgba(221, 216, 216, 0.9);
+                                    border-bottom: 2px solid $hover-color;
+                                    color: $black-color;
+                                }
+                        } 
+                        i{
+                            font-size: 1.2rem;
+                            position: absolute;
+                            margin-top: 2.5rem;
+                            visibility: hidden;
+                        }
+                        small{
+                            font-size: 1.2rem;
+                            visibility: hidden;
+                        }
+                    }
+                    .error{
+                        input{
+                            border-bottom: 2px solid #db3535;
+                        }
+                        small{
+                            color: #db3535;
+                            visibility: visible;
+                        }
+                        .icon-cancel-circle{
+                            color: #db3535;
+                            visibility: visible;
+                            margin-left: 5px;
+                        }
+                    }
+
+                    .success{
+                        .icon-checkmark{
+                            color: #2ecc71;
+                            visibility: visible;
+                            margin-left: 5px;
+                        }
+                        
+                        input{
+                            border-bottom: 2px solid #41cc7b;
+                        }
+                    }
+                    
+                      
             }
             .boton{
                 border: 2px solid #ffffff;

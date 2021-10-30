@@ -36,18 +36,15 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-  .cuenta-container .logo {
-    width: 250px;
-    height: 250px;
-    border-radius: 20%; }
   .cuenta-container .form {
     text-align: center;
     background-color: rgba(0, 0, 0, 0.8);
     border: 2px solid #ffffff;
     border-radius: 20%;
     color: #ffff;
-    padding: 5rem;
-    font-size: 3rem; }
+    padding: 3rem;
+    font-size: 3rem;
+    width: 450px; }
     @media all and (max-width: 600px) {
       .cuenta-container .form {
         padding: 2rem; } }
@@ -68,18 +65,41 @@ li {
       margin-bottom: 1rem; }
       .cuenta-container .form ul label {
         font-size: 1.5rem; }
-      .cuenta-container .form ul input {
+      .cuenta-container .form ul .form-data input {
         background-color: rgba(0, 0, 0, 0.5);
         border: none;
         border-bottom: 2px solid #ffffff;
         font-size: 1rem;
         font-weight: 700;
-        padding: 0.5rem;
+        padding: 0.3rem;
         color: #ffffff; }
-        .cuenta-container .form ul input:hover {
+        .cuenta-container .form ul .form-data input:hover {
           background-color: rgba(221, 216, 216, 0.9);
           border-bottom: 2px solid #805252;
           color: #000000; }
+      .cuenta-container .form ul .form-data i {
+        font-size: 1.2rem;
+        position: absolute;
+        margin-top: 2.5rem;
+        visibility: hidden; }
+      .cuenta-container .form ul .form-data small {
+        font-size: 1.2rem;
+        visibility: hidden; }
+      .cuenta-container .form ul .error input {
+        border-bottom: 2px solid #db3535; }
+      .cuenta-container .form ul .error small {
+        color: #db3535;
+        visibility: visible; }
+      .cuenta-container .form ul .error .icon-cancel-circle {
+        color: #db3535;
+        visibility: visible;
+        margin-left: 5px; }
+      .cuenta-container .form ul .success .icon-checkmark {
+        color: #2ecc71;
+        visibility: visible;
+        margin-left: 5px; }
+      .cuenta-container .form ul .success input {
+        border-bottom: 2px solid #41cc7b; }
     .cuenta-container .form .boton {
       border: 2px solid #ffffff;
       border-radius: 20%;

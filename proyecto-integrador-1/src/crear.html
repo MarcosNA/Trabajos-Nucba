@@ -12,10 +12,6 @@
 </head>
 <body>
     <main class="cuenta-container">
-        <div class="logo">
-            <a href="index.html"><img src="./assets/img/logo.png" alt="Logo"></a>   
-        </div>
-
         <div class="form">
             <form id="form" action="./form-result.php" method="POST" target="Self_">
                 <h2>Crear Cuenta</h2>
@@ -68,12 +64,18 @@
                         <br><small>Error mensaje</small>
                     </li>
                    
-                    <li>Indique una frase de seguridad</li>
-                    <textarea name="palabraseguridad" id="frase" cols="25" rows="3"></textarea><br>
-                    <small>Error mensaje</small>
+                    <li class="form-data">
+                        <span>Indique una frase de seguridad</span>
+                        <textarea name="palabraseguridad" id="frase" cols="25" rows="3" class="text"></textarea><br>
+                    </li>
+                    
                 </ul>
     
                 <input type="submit" class="boton">
+                <div class="opcion-cuenta">
+                    <a href="cuenta.html">Inicar sesion</a>
+                    <a href="index.html">Volver al inicio</a>
+                </div>  
             </form>
         </div>
         

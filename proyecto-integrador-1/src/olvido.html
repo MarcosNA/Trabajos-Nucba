@@ -12,25 +12,25 @@
 </head>
 <body>
     <main class="cuenta-container">
-        <div class="logo">
-            <a href="index.html"><img src="./assets/img/logo.png" alt="Logo"></a>   
-        </div>
-
         <div class="form">
             <form action="./form-result.php" method="POST" target="Self_">
                 <h2>Recuperar Cuenta</h2>
                 <ul>
-                    <li><input type="email" name="email" placeholder="Email"></li>
+                    <li class="form-data"><input type="email" name="email" placeholder="Email"></li>
                     
                     <li>Indique su frase de seguridad</li>
                     <textarea name="palabraseguridad" id="frase" cols="25" rows="4"></textarea><br>
                 </ul>
     
                 <input type="submit" class="boton">
+                <div class="opcion-cuenta">
+                    <a href="cuenta.html">Inicar sesion</a>
+                    <a href="index.html">Volver al inicio</a>
+                </div> 
             </form>
         </div>
 
     </main>
-           
+  <script src="./assets/js/crear.js"></script>         
 </body>
 </html>

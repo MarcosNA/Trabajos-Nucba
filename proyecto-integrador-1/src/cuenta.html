@@ -12,31 +12,39 @@
 </head>
 <body>
     <main class="cuenta-container">
-        <div class="logo">
-            <a href="index.html"><img src="./assets/img/logo.png" alt="Logo"></a>   
-        </div>
-
         <div class="form">
-            <form class="form-data" action="./form-result.php" method="POST" target="Self_">
+            <form id="form" class="form-data" action="./form-result.php" method="POST" target="Self_">
                 <h2>Inicia Sesion</h2>
                 <ul>
                     <li><label for="email">Email: </label></li>
-                    <li><input type="email" name="email" placeholder="Email" ></li>
+                    <li class="form-data">
+                        <input type="email" name="email" placeholder="Email" id="email" >
+                        <i class="icon-checkmark"></i>
+                        <i class="icon-cancel-circle"></i>
+                        <br><small>Error mensaje</small>
+                    </li>
                 </ul>
                 <ul>
                     <li><label for="pasword">Contraseña: </label></li>
-                    <li><input type="pasword" placeholder="Contraseña"></li>
+                    <li class="form-data">
+                        <input type="pasword" placeholder="Contraseña" id="password">
+                        <i class="icon-checkmark"></i>
+                        <i class="icon-cancel-circle"></i>
+                        <br><small>Error mensaje</small>
+                    </li>
                 </ul>
                 <input type="submit" class="boton">
 
                 <div class="opcion-cuenta">
                     <a href="crear.html">Crear Cuenta</a>
                     <a href="olvido.html">¿Olvido su contraseña?</a>
+                    <a href="index.html">Volver al inicio</a>
                 </div>  
             </form>
         </div>
 
     </main>
-           
+   
+<script src="./assets/js/cuenta.js"></script>
 </body>
 </html>
