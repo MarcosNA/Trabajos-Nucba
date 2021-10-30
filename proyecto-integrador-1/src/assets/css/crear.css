@@ -46,7 +46,8 @@ li {
     width: 450px; }
     @media all and (max-width: 600px) {
       .cuenta-container .form {
-        padding: 1rem; } }
+        padding: 1rem;
+        width: auto; } }
     @media all and (max-width: 400px) {
       .cuenta-container .form {
         font-size: 1rem; } }
