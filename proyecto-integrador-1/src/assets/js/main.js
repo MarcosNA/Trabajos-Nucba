@@ -1,10 +1,10 @@
 addEventListener("DOMContentLoaded", () => {
     const iconMenu = document.querySelector(".btn-nav")
+ 
     if(iconMenu){
         iconMenu.addEventListener("click", () => {
             const nav = document.querySelector(".navbar")
-            nav.classList.toggle("show")
-           
+            nav.classList.toggle("show")  
         })
     }
 

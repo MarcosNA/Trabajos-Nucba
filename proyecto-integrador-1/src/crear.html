@@ -17,12 +17,24 @@
         </div>
 
         <div class="form">
-            <form action="./form-result.php" method="POST" target="Self_">
+            <form id="form" action="./form-result.php" method="POST" target="Self_">
                 <h2>Crear Cuenta</h2>
                 <ul>
-                    <li><input type="text" name="nombre" placeholder="Nombre"></li>
-                    <li><input type="text" name="apellido" placeholder="Apellido"></li>
-        
+                    <li class="form-data">
+                        <input type="text" name="nombre" placeholder="Nombre" id="nombre">
+                        <i class="icon-checkmark"></i>
+                        <i class="icon-cancel-circle"></i>
+                        <br><small>Error mensaje</small>
+                    </li>
+                    
+                  
+                    <li class="form-data">
+                        <input type="text" name="apellido" placeholder="Apellido" id="apellido">
+                        <i class="icon-checkmark"></i>
+                        <i class="icon-cancel-circle"></i>
+                        <br><small>Error mensaje</small>
+                    </li>
+            
                     <li class="genero">
                         <label for="sexo">Introduce tu sexo</label><br>
                         <input type="radio" id="hombre" name="sexo" value="hombre">
@@ -31,21 +43,43 @@
                         <label for="female">Mujer</label>
                         <input type="radio" id="otro" name="sexo" value="otro">
                         <label for="otro">Otro</label>
+                        <br><small>Error mensaje</small>
                     </li>
+                    
     
-                    <li><input type="email" name="email" placeholder="Email"></li>
-                    <li><input type="password" name="contraseña" placeholder="Contraseña"></li>
-                    <li><input type="password" name="vericontraseña" placeholder="Confirmar Contraseña"></li><br>
+                    <li class="form-data">
+                        <input type="email" name="email" placeholder="Email" id="email">
+                        <i class="icon-checkmark"></i>
+                        <i class="icon-cancel-circle"></i>
+                        <br><small>Error mensaje</small>
+                    </li>
+
+                    <li class="form-data">
+                        <input type="password" name="contraseña" placeholder="Contraseña" id="password">
+                        <i class="icon-checkmark"></i>
+                        <i class="icon-cancel-circle"></i>
+                        <br><small>Error mensaje</small>
+                    </li>
+
+                    <li class="form-data">
+                        <input type="password" name="vericontraseña" placeholder="Confirmar Contraseña" id="password2">
+                        <i class="icon-checkmark"></i>
+                        <i class="icon-cancel-circle"></i>
+                        <br><small>Error mensaje</small>
+                    </li>
                    
                     <li>Indique una frase de seguridad</li>
                     <textarea name="palabraseguridad" id="frase" cols="25" rows="3"></textarea><br>
+                    <small>Error mensaje</small>
                 </ul>
     
                 <input type="submit" class="boton">
             </form>
         </div>
-
+        
     </main>
-           
+   
+    
+<script src="./assets/js/crear.js"></script>
 </body>
 </html>

@@ -40,6 +40,9 @@ li {
     width: 250px;
     height: 250px;
     border-radius: 20%; }
+    .cuenta-container .logo a {
+      max-width: 100%;
+      max-height: 100%; }
   .cuenta-container .form {
     text-align: center;
     background-color: rgba(0, 0, 0, 0.8);
@@ -59,21 +62,41 @@ li {
       margin-bottom: 1.5rem;
       color: #633030;
       font-size: 1.7rem; }
-    .cuenta-container .form li {
+    .cuenta-container .form .form-data {
       margin-bottom: 1.3rem;
       list-style: none; }
-      .cuenta-container .form li input {
+      .cuenta-container .form .form-data input {
         background-color: rgba(0, 0, 0, 0.5);
         border: none;
         border-bottom: 2px solid #ffffff;
         font-size: 1rem;
         padding: 0.5rem;
         color: #ffffff; }
-        .cuenta-container .form li input:hover {
+        .cuenta-container .form .form-data input:hover {
           background-color: rgba(221, 216, 216, 0.9);
           border-bottom: 2px solid #805252;
           color: #000000;
           font-weight: 700; }
+      .cuenta-container .form .form-data i {
+        position: absolute;
+        visibility: hidden; }
+      .cuenta-container .form .form-data small {
+        visibility: hidden; }
+    .cuenta-container .form .error small {
+      color: #db3535;
+      visibility: visible; }
+    .cuenta-container .form .error .icon-cancel-circle {
+      color: #db3535;
+      visibility: visible;
+      margin-left: 5px; }
+    .cuenta-container .form .error input {
+      border-bottom: 2px solid #db3535; }
+    .cuenta-container .form .success .icon-checkmark {
+      color: #2ecc71;
+      visibility: visible;
+      margin-left: 5px; }
+    .cuenta-container .form .success input {
+      border-bottom: 2px solid #41cc7b; }
     .cuenta-container .form textarea {
       font-weight: 700;
       border: 3px solid #633030;

@@ -14,6 +14,10 @@
             width: 250px;
             height: 250px;
             border-radius: 20%;
+            a{
+                max-width: 100%;
+                max-height: 100%;
+            }
         }
         .form{
             text-align: center;
@@ -38,7 +42,7 @@
                 color:  #633030; 
                 font-size: 1.7rem;
             }
-            li{
+            .form-data{
                 margin-bottom: 1.3rem;
                 list-style: none;
                     input{
@@ -54,8 +58,49 @@
                                 color: $black-color;
                                 font-weight: 700;
                             }   
-                    }          
+                    }
+                    
+                    i{
+                        position: absolute;
+                        visibility: hidden;
+                    }
+
+                    small{
+                    visibility: hidden;
+                    }
+                    
             }
+            .error{
+                small{
+                    color: #db3535;
+                    visibility: visible;
+                }
+                .icon-cancel-circle{
+                    color: #db3535;
+                    visibility: visible;
+                    margin-left: 5px;
+                }
+
+                input{
+                    border-bottom: 2px solid #db3535;
+                }
+            }
+
+            .success{
+                .icon-checkmark{
+                    color: #2ecc71;
+                    visibility: visible;
+                    margin-left: 5px;
+                }
+                
+                input{
+                    border-bottom: 2px solid #41cc7b;
+                }
+            }
+            
+
+            
+
             textarea{
                 font-weight: 700;
                 border: 3px solid $text-color;
@@ -79,4 +124,5 @@
                     }
             }
     }
+
 }
