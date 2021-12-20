@@ -88,8 +88,16 @@
                     cursor: pointer;
                     font-size: 3rem;
                     width: max-content;
+                    text-decoration: none;
                         &:hover{
                             color: $text-color;
+                        }
+
+                        .itemcart{
+                            width: 90px;
+                            font-size: 1rem;
+                            background-color: rgb(190, 49, 49);
+                            border-radius: 50%;
                         }
 
                     @media all and (max-width:1200px){
@@ -386,7 +394,8 @@
                                     span{
                                         font-size: 20px;
                                     }
-                                    a{
+                                    button{
+                                        background-color: rgba(0, 0, 0, 0.0);
                                         color: $white-color;
                                         margin-top: 1rem;
                                         border: 2px solid $white-color;

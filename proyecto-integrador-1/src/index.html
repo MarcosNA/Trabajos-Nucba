@@ -28,7 +28,8 @@
                         </div>
                 </nav>
                 <span class="buy-cart">
-                    <i class="icon-cart"></i>
+                    <a class="buy-cart" href="carrito.html"><i class="icon-cart"></i></a>
+                    <span class="itemcart" id="totalItems"></span>
                 </span>
 
                 <span class="btn-nav">
@@ -76,7 +77,7 @@
                         <div class="capa">
                             <h3>Vacio</h3>
                             <span>$750xkg</span>
-                            <a href="">agregar al carrito</a>   
+                            <button onclick= "{addProducto(`Vacio`,750,1)}"> Agregar al carrito</button>  
                         </div>
 
                     </div>
@@ -85,7 +86,7 @@
                         <div class="capa">
                             <h3>Asado</h3>
                             <span>$680xkg</span>
-                            <a href="">agregar al carrito</a>    
+                            <button onclick= "{addProducto(`Asado`,680,1)}"> Agregar al carrito</button>    
                         </div>  
                     </div>
 
@@ -94,7 +95,7 @@
                         <div class="capa">
                             <h3>Lomo</h3>
                             <span>$920xkg</span>
-                            <a href="">agregar al carrito</a>     
+                            <button onclick= "{addProducto(`Lomo`,920,1)}"> Agregar al carrito</button>   
                         </div>  
                     </div>
 
@@ -103,7 +104,7 @@
                         <div class="capa">
                             <h3>Matambre</h3>
                             <span>$660xkg</span>
-                            <a href="">agregar al carrito</a>    
+                            <button onclick= "{addProducto(`Matambre`,660,1)}"> Agregar al carrito</button>    
                         </div>  
                     </div>
 
@@ -112,7 +113,7 @@
                         <div class="capa">
                             <h3>Bife Ancho</h3>
                             <span>$690xkg</span>
-                            <a href="">agregar al carrito</a>     
+                            <button onclick= "{addProducto(`Bife Ancho`,690,1)}"> Agregar al carrito</button>    
                         </div>  
                     </div>
 
@@ -121,7 +122,7 @@
                         <div class="capa">
                             <h3>Bife Angosto</h3>
                             <span>$670xkg</span>
-                            <a href="">agregar al carrito</a>     
+                            <button onclick= "{addProducto(`Bife Angosto`,670,1)}"> Agregar al carrito</button>     
                         </div> 
                     </div>
 
@@ -130,7 +131,7 @@
                         <div class="capa">
                             <h3>Entraña</h3>
                             <span>$710xkg</span>
-                            <a href="">agregar al carrito</a>     
+                            <button onclick= "{addProducto(`Entraña`,710,1)}"> Agregar al carrito</button>     
                         </div> 
                     </div>
 
@@ -139,12 +140,14 @@
                         <div class="capa">
                             <h3>Peceto</h3>
                             <span>$890xkg</span>
-                            <a href="">agregar al carrito</a>     
+                            <button onclick= "{addProducto(`Peceto`,890,1)}"> Agregar al carrito</button>     
                         </div> 
                     </div>
                     
                 </div>   
         </section>
+
+        
 
         <section class="section-contacto" id="contacto">
             <h2>Contacto</h2>
@@ -213,5 +216,6 @@
 
 
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/carrio.js"></script>
 </body>
 </html>

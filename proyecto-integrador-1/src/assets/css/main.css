@@ -94,9 +94,15 @@ li {
         color: #e0d5ca;
         cursor: pointer;
         font-size: 3rem;
-        width: max-content; }
+        width: max-content;
+        text-decoration: none; }
         .container header .menu .buy-cart:hover {
           color: #633030; }
+        .container header .menu .buy-cart .itemcart {
+          width: 90px;
+          font-size: 1rem;
+          background-color: #be3131;
+          border-radius: 50%; }
         @media all and (max-width: 1200px) {
           .container header .menu .buy-cart {
             font-size: 2.5rem; } }
@@ -308,14 +314,15 @@ li {
           font-size: 30px; }
         .container .section-catalogo .catalogo-container .image-box .capa span {
           font-size: 20px; }
-        .container .section-catalogo .catalogo-container .image-box .capa a {
+        .container .section-catalogo .catalogo-container .image-box .capa button {
+          background-color: rgba(0, 0, 0, 0);
           color: #ffffff;
           margin-top: 1rem;
           border: 2px solid #ffffff;
           border-radius: 10%;
           text-decoration: none;
           padding: 0.5rem; }
-          .container .section-catalogo .catalogo-container .image-box .capa a:hover {
+          .container .section-catalogo .catalogo-container .image-box .capa button:hover {
             background-color: #805252; }
   @media all and (max-width: 600px) {
     .container .section-contacto {
