@@ -27,21 +27,7 @@ const totalPrice = () => {
     return totalCart
 }
 
-const productsList = () => {
-    cartSelect.innerHTML = products.map(product => {
-        return `
-            <div class="cart-item">
-                <div class="cart-item-content">
-                    <span>${product.product}</span>
-                    <span>Count: ${product.count}</span>
-                    </div>
-                        <span>$ ${product.price}</span>
-                    </div>
-                </div>
-            </div>        
-        `
-    })
-}
+
 
 const addProducto = (product, price, count) => {
     for(let item in products) {
@@ -52,6 +38,22 @@ const addProducto = (product, price, count) => {
             productsList()
             return
         }
+    }
+
+    const productsList = () => {
+        cartSelect.innerHTML = products.map(product => {
+            return `
+                <div class="cart-item">
+                    <div class="cart-item-content">
+                        <span>${product.product}</span>
+                        <span>Cantidad: ${product.count}</span>
+                        </div class ="total-items">
+                            <span>$ ${product.price}</span>
+                        </div>
+                    </div>
+                </div>        
+            `
+        })
     }
 
     products.push({ product: product, price: price, count: count});

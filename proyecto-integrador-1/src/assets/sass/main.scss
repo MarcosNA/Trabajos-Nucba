@@ -94,10 +94,16 @@
                         }
 
                         .itemcart{
-                            width: 90px;
-                            font-size: 1rem;
+                            font-size: 1.5rem;
                             background-color: rgb(190, 49, 49);
                             border-radius: 50%;
+                            position: relative;
+                            right: 4rem;
+                            bottom: 2rem;
+
+                            @media all and (max-width:600px){
+                                right: 2rem
+                            }
                         }
 
                     @media all and (max-width:1200px){
@@ -109,9 +115,9 @@
                     }
 
                     @media all and (max-width: 600px){
-                        position: relative;
-                       right: 2rem;
-                       top: 0.5rem;
+                       position: relative;
+                       right: 1rem;
+                       top: 0.4rem;
                     }
 
                     @media all and (max-width: 450px){
@@ -127,7 +133,7 @@
                     @media all and (max-width:1000px) {
                         position: fixed;
                         width: 100vw;
-                        height: calc(100% -  10rem);
+                        height: calc(100% -  131px);
                         top: 21.5vh;
                         text-align: center;
                         transition: all .4s;
@@ -135,7 +141,7 @@
                         background-color: $black-color
                     }
                     @media all and (max-width: 600px){
-                        top: 20.5vh;
+                        top: 15.5vh;
                         height: calc(100% - 131px);
                     }
                     
@@ -400,7 +406,7 @@
                                         margin-top: 1rem;
                                         border: 2px solid $white-color;
                                         border-radius: 10%;
-
+                                        font-size: 1rem;
                                         text-decoration: none;
                                         padding: 0.5rem;
 
@@ -412,6 +418,81 @@
                      }           
              }
         }
+
+    .section-carrito{
+        @media all and (max-width:600px){
+            margin: 0;
+        }
+        h2{
+            color: $text-color;
+            border-bottom: 1px solid $black-color;
+            font-size: 2rem;
+
+            @media all and (min-width:1800px){
+                font-size: 3rem;
+            }
+        }
+        h3{
+            color: $text-color;
+            text-align: center;
+            font-size: 2rem;
+            margin-top: 0.5rem;
+            margin-bottom: 3rem;
+
+            @media all and (min-width:1800px){
+                font-size: 3rem;
+            }
+        }
+        #cartSelect{
+            margin-bottom: 3rem;
+
+            .mensaje-productos{
+                font-size: 1.4rem;
+                margin-bottom: 2rem;
+            }
+
+            .cart-item{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+                    span{
+                        font-size: 1.4rem;
+                        font-weight:500;
+                    }
+                    .total-items{
+                        font-size: 1.2rem;
+                        margin-top: 2rem;
+                    }
+                }
+            }
+        }
+        .total-items{
+            strong{
+                font-size: 1.2rem;
+                margin-top: 2rem;
+            }
+            span{
+                font-size:1.2rem
+            }
+        }
+
+        button{
+            margin-top: 1rem;
+            border: none;
+            border-radius: 20%;
+            padding: 0.5rem;
+            background-color: rgba(0, 0, 0, 0.2);
+            font-size: 1.2rem;
+            &:hover{
+                background-color: $hover-color;
+            }
+
+        }
+       
+    }
+
+
     .section-contacto{
         
 
@@ -624,7 +705,7 @@
 
             }
     }
-}
+
 
 .container-fixed{
     position: fixed;

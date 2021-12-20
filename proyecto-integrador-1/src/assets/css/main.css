@@ -99,10 +99,15 @@ li {
         .container header .menu .buy-cart:hover {
           color: #633030; }
         .container header .menu .buy-cart .itemcart {
-          width: 90px;
-          font-size: 1rem;
+          font-size: 1.5rem;
           background-color: #be3131;
-          border-radius: 50%; }
+          border-radius: 50%;
+          position: relative;
+          right: 4rem;
+          bottom: 2rem; }
+          @media all and (max-width: 600px) {
+            .container header .menu .buy-cart .itemcart {
+              right: 2rem; } }
         @media all and (max-width: 1200px) {
           .container header .menu .buy-cart {
             font-size: 2.5rem; } }
@@ -112,8 +117,8 @@ li {
         @media all and (max-width: 600px) {
           .container header .menu .buy-cart {
             position: relative;
-            right: 2rem;
-            top: 0.5rem; } }
+            right: 1rem;
+            top: 0.4rem; } }
         @media all and (max-width: 450px) {
           .container header .menu .buy-cart {
             font-size: 2.5rem; } }
@@ -125,7 +130,7 @@ li {
           .container header .menu .navbar {
             position: fixed;
             width: 100vw;
-            height: calc(100% -  10rem);
+            height: calc(100% -  131px);
             top: 21.5vh;
             text-align: center;
             transition: all .4s;
@@ -133,7 +138,7 @@ li {
             background-color: #000000; } }
         @media all and (max-width: 600px) {
           .container header .menu .navbar {
-            top: 20.5vh;
+            top: 15.5vh;
             height: calc(100% - 131px); } }
         .container header .menu .navbar div .a-nav {
           position: relative;
@@ -320,163 +325,218 @@ li {
           margin-top: 1rem;
           border: 2px solid #ffffff;
           border-radius: 10%;
+          font-size: 1rem;
           text-decoration: none;
           padding: 0.5rem; }
           .container .section-catalogo .catalogo-container .image-box .capa button:hover {
             background-color: #805252; }
   @media all and (max-width: 600px) {
-    .container .section-contacto {
+    .container .section-carrito {
       margin: 0; } }
-  .container .section-contacto h2 {
+  .container .section-carrito h2 {
     color: #633030;
     border-bottom: 1px solid #000000;
     font-size: 2rem; }
     @media all and (min-width: 1800px) {
-      .container .section-contacto h2 {
+      .container .section-carrito h2 {
         font-size: 3rem; } }
-  .container .section-contacto h3 {
+  .container .section-carrito h3 {
     color: #633030;
     text-align: center;
     font-size: 2rem;
-    margin-top: 0.5rem; }
+    margin-top: 0.5rem;
+    margin-bottom: 3rem; }
     @media all and (min-width: 1800px) {
-      .container .section-contacto h3 {
+      .container .section-carrito h3 {
         font-size: 3rem; } }
-  .container .section-contacto .container-contact {
-    margin-top: 3rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center; }
-    .container .section-contacto .container-contact .datos {
+  .container .section-carrito #cartSelect {
+    margin-bottom: 3rem; }
+    .container .section-carrito #cartSelect .mensaje-productos {
+      font-size: 1.4rem;
+      margin-bottom: 2rem; }
+    .container .section-carrito #cartSelect .cart-item {
       display: flex;
-      flex-direction: column;
-      font-size: 1.3rem; }
-      @media all and (min-width: 1800px) {
-        .container .section-contacto .container-contact .datos {
-          font-size: 2rem; } }
-      @media all and (max-width: 600px) {
-        .container .section-contacto .container-contact .datos {
-          position: relative;
-          bottom: 1.5rem; } }
-      .container .section-contacto .container-contact .datos i {
-        margin: 1rem; }
-    .container .section-contacto .container-contact .form-data {
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start; }
+      .container .section-carrito #cartSelect .cart-item span {
+        font-size: 1.4rem;
+        font-weight: 500; }
+      .container .section-carrito #cartSelect .cart-item .total-items {
+        font-size: 1.2rem;
+        margin-top: 2rem; }
+  .container .total-items strong {
+    font-size: 1.2rem;
+    margin-top: 2rem; }
+  .container .total-items span {
+    font-size: 1.2rem; }
+  .container button {
+    margin-top: 1rem;
+    border: none;
+    border-radius: 20%;
+    padding: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    font-size: 1.2rem; }
+    .container button:hover {
+      background-color: #805252; }
+
+@media all and (max-width: 600px) {
+  .section-contacto {
+    margin: 0; } }
+
+.section-contacto h2 {
+  color: #633030;
+  border-bottom: 1px solid #000000;
+  font-size: 2rem; }
+  @media all and (min-width: 1800px) {
+    .section-contacto h2 {
+      font-size: 3rem; } }
+
+.section-contacto h3 {
+  color: #633030;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 0.5rem; }
+  @media all and (min-width: 1800px) {
+    .section-contacto h3 {
+      font-size: 3rem; } }
+
+.section-contacto .container-contact {
+  margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center; }
+  .section-contacto .container-contact .datos {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3rem; }
+    @media all and (min-width: 1800px) {
+      .section-contacto .container-contact .datos {
+        font-size: 2rem; } }
+    @media all and (max-width: 600px) {
+      .section-contacto .container-contact .datos {
+        position: relative;
+        bottom: 1.5rem; } }
+    .section-contacto .container-contact .datos i {
+      margin: 1rem; }
+  .section-contacto .container-contact .form-data {
+    text-align: center;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid #000000;
+    border-radius: 20%; }
+    @media all and (max-width: 1800px) {
+      .section-contacto .container-contact .form-data {
+        width: 30rem; } }
+    @media all and (max-width: 800px) {
+      .section-contacto .container-contact .form-data {
+        padding: 1rem; } }
+    .section-contacto .container-contact .form-data h4 {
       text-align: center;
-      padding: 2rem;
-      background-color: rgba(0, 0, 0, 0.2);
-      border: 1px solid #000000;
-      border-radius: 20%; }
-      @media all and (max-width: 1800px) {
-        .container .section-contacto .container-contact .form-data {
-          width: 30rem; } }
+      margin-bottom: 2rem;
+      color: #633030;
+      border-bottom: 1px solid #000000;
+      font-size: 2rem; }
       @media all and (max-width: 800px) {
-        .container .section-contacto .container-contact .form-data {
-          padding: 1rem; } }
-      .container .section-contacto .container-contact .form-data h4 {
-        text-align: center;
-        margin-bottom: 2rem;
-        color: #633030;
-        border-bottom: 1px solid #000000;
-        font-size: 2rem; }
+        .section-contacto .container-contact .form-data h4 {
+          font-size: 1.5rem; } }
+    .section-contacto .container-contact .form-data ul {
+      margin-bottom: 1rem; }
+      .section-contacto .container-contact .form-data ul li label {
+        font-size: 1.3rem;
+        font-weight: 600; }
         @media all and (max-width: 800px) {
-          .container .section-contacto .container-contact .form-data h4 {
-            font-size: 1.5rem; } }
-      .container .section-contacto .container-contact .form-data ul {
-        margin-bottom: 1rem; }
-        .container .section-contacto .container-contact .form-data ul li label {
-          font-size: 1.3rem;
-          font-weight: 600; }
-          @media all and (max-width: 800px) {
-            .container .section-contacto .container-contact .form-data ul li label {
-              font-size: 1.1rem; } }
-        .container .section-contacto .container-contact .form-data ul li input {
-          background-color: rgba(0, 0, 0, 0.2);
-          border: none;
-          border-bottom: 1px solid #000000;
-          height: 2rem;
-          width: 15rem; }
-          .container .section-contacto .container-contact .form-data ul li input:hover {
-            background-color: rgba(221, 216, 216, 0.9);
-            font-weight: 700;
-            border: 1px solid #000000; }
-          @media all and (min-width: 600px) {
-            .container .section-contacto .container-contact .form-data ul li input {
-              width: 20rem; } }
-        .container .section-contacto .container-contact .form-data ul li textarea {
-          background-color: rgba(0, 0, 0, 0.2);
-          border: 1px solid #000000; }
-          .container .section-contacto .container-contact .form-data ul li textarea:hover {
-            background-color: rgba(221, 216, 216, 0.9);
-            font-weight: 700; }
-      .container .section-contacto .container-contact .form-data .boton {
+          .section-contacto .container-contact .form-data ul li label {
+            font-size: 1.1rem; } }
+      .section-contacto .container-contact .form-data ul li input {
         background-color: rgba(0, 0, 0, 0.2);
-        border-radius: 20%;
-        border: 1px solid #000000;
-        font-size: 1.5rem;
-        font-weight: 600;
-        padding: 1rem; }
-        .container .section-contacto .container-contact .form-data .boton:hover {
-          font-size: 1;
-          background-color: #805252; }
-  .container footer {
-    padding: 1rem;
-    background-color: rgba(0, 0, 0, 0.9);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border-top: 1px solid #ffffff; }
-    .container footer .redes {
-      color: #ffffff;
-      text-align: center; }
-      @media all and (max-width: 600px) {
-        .container footer .redes {
-          width: 200px; } }
-      .container footer .redes h4 {
-        margin-bottom: 1.5rem;
-        font-size: 1.5rem; }
-        @media all and (max-width: 600px) {
-          .container footer .redes h4 {
-            font-size: 1rem; } }
-      .container footer .redes a {
-        color: #ffffff;
-        text-decoration: none;
-        padding: 2px; }
-        .container footer .redes a .icon-facebook:hover {
-          background-color: #3b5998; }
-        .container footer .redes a .icon-instagram:hover {
-          background-color: #dd2a7b; }
-        .container footer .redes a i {
-          font-size: 2rem;
-          margin: 1rem;
-          padding: 0.2rem;
-          border: 2px solid #ffffff;
-          border-radius: 20%; }
-          @media all and (max-width: 600px) {
-            .container footer .redes a i {
-              font-size: 1.5rem;
-              border: none; } }
-    .container footer .logo {
-      height: 180px;
-      width: 180px; }
-      @media all and (max-width: 600px) {
-        .container footer .logo {
-          position: relative;
-          left: 0.3rem;
-          top: 2rem; } }
-      .container footer .logo a {
-        height: 100%;
-        width: 100%; }
-    .container footer .info {
-      color: #ffffff;
-      display: flex;
-      flex-direction: column;
+        border: none;
+        border-bottom: 1px solid #000000;
+        height: 2rem;
+        width: 15rem; }
+        .section-contacto .container-contact .form-data ul li input:hover {
+          background-color: rgba(221, 216, 216, 0.9);
+          font-weight: 700;
+          border: 1px solid #000000; }
+        @media all and (min-width: 600px) {
+          .section-contacto .container-contact .form-data ul li input {
+            width: 20rem; } }
+      .section-contacto .container-contact .form-data ul li textarea {
+        background-color: rgba(0, 0, 0, 0.2);
+        border: 1px solid #000000; }
+        .section-contacto .container-contact .form-data ul li textarea:hover {
+          background-color: rgba(221, 216, 216, 0.9);
+          font-weight: 700; }
+    .section-contacto .container-contact .form-data .boton {
+      background-color: rgba(0, 0, 0, 0.2);
+      border-radius: 20%;
+      border: 1px solid #000000;
+      font-size: 1.5rem;
+      font-weight: 600;
+      padding: 1rem; }
+      .section-contacto .container-contact .form-data .boton:hover {
+        font-size: 1;
+        background-color: #805252; }
+
+footer {
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid #ffffff; }
+  footer .redes {
+    color: #ffffff;
+    text-align: center; }
+    @media all and (max-width: 600px) {
+      footer .redes {
+        width: 200px; } }
+    footer .redes h4 {
+      margin-bottom: 1.5rem;
       font-size: 1.5rem; }
-      @media all and (max-width: 800px) {
-        .container footer .info {
-          position: relative;
-          left: 1rem;
-          font-size: 0.8rem; } }
+      @media all and (max-width: 600px) {
+        footer .redes h4 {
+          font-size: 1rem; } }
+    footer .redes a {
+      color: #ffffff;
+      text-decoration: none;
+      padding: 2px; }
+      footer .redes a .icon-facebook:hover {
+        background-color: #3b5998; }
+      footer .redes a .icon-instagram:hover {
+        background-color: #dd2a7b; }
+      footer .redes a i {
+        font-size: 2rem;
+        margin: 1rem;
+        padding: 0.2rem;
+        border: 2px solid #ffffff;
+        border-radius: 20%; }
+        @media all and (max-width: 600px) {
+          footer .redes a i {
+            font-size: 1.5rem;
+            border: none; } }
+  footer .logo {
+    height: 180px;
+    width: 180px; }
+    @media all and (max-width: 600px) {
+      footer .logo {
+        position: relative;
+        left: 0.3rem;
+        top: 2rem; } }
+    footer .logo a {
+      height: 100%;
+      width: 100%; }
+  footer .info {
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem; }
+    @media all and (max-width: 800px) {
+      footer .info {
+        position: relative;
+        left: 1rem;
+        font-size: 0.8rem; } }
 
 .container-fixed {
   position: fixed; }

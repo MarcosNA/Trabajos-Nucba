@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/iComoon/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&display=swap" rel="stylesheet">
+    <link  href="./carrito.html">
     <title>El Salvador</title>
 </head>
 <body>
@@ -28,7 +29,7 @@
                         </div>
                 </nav>
                 <span class="buy-cart">
-                    <a class="buy-cart" href="carrito.html"><i class="icon-cart"></i></a>
+                    <a class="buy-cart"><i class="icon-cart"></i></a>
                     <span class="itemcart" id="totalItems"></span>
                 </span>
 
@@ -122,7 +123,7 @@
                         <div class="capa">
                             <h3>Bife Angosto</h3>
                             <span>$670xkg</span>
-                            <button onclick= "{addProducto(`Bife Angosto`,670,1)}"> Agregar al carrito</button>     
+                            <button onclick=" {addProducto(`Bife Angosto`,670,1)}"> Agregar al carrito</button>     
                         </div> 
                     </div>
 
@@ -145,6 +146,26 @@
                     </div>
                     
                 </div>   
+        </section>
+
+
+        <section class="section-carrito">
+            <h2>Carrito</h2>
+            <h3>Productos Seleccionados</h3>
+            <div  id="cartSelect">
+                <div class="mensaje-productos">
+                    No tienes productos seleccionados
+                </div>
+            </div>
+            <div class="total-items">
+                    <span>
+                        <strong>Total: </strong>
+                        <span id="totalProductos"></span>
+                    </span>
+            </div>
+            <button>finalizar compra</button>
+            
+        
         </section>
 
         
@@ -216,6 +237,6 @@
 
 
     <script src="./assets/js/main.js"></script>
-    <script src="./assets/js/carrio.js"></script>
+    <script src="./assets/js/carrito.js"></script>
 </body>
 </html>
