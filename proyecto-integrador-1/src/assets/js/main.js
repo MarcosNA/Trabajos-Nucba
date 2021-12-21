@@ -1,19 +1,23 @@
 addEventListener("DOMContentLoaded", () => {
     const iconMenu = document.querySelector(".btn-nav")
- 
+    const nav = document.querySelector(".navbar")
+    const main = document.querySelector(".container")
+    const a = document.querySelectorAll(".a-nav")
+    
+   
+  
     if(iconMenu){
         iconMenu.addEventListener("click", () => {
-            const nav = document.querySelector(".navbar")
-            nav.classList.toggle("show")  
+            nav.classList.toggle("show")
+            main.classList.toggle("container-fixed")  
         })
+
     }
 
-    const a = document.querySelectorAll(".a-nav")
-    console.log(a)
     for (let i = 0 ; i < a.length; i++) {
         a[i].addEventListener('click',() => {
-            const nav = document.querySelector(".navbar")
             nav.classList.toggle("show")
+            main.classList.toggle("container-fixed") 
         } ) ; 
      }   
 })

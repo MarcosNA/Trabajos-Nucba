@@ -46,9 +46,9 @@ const addProducto = (product, price, count) => {
                 <div class="cart-item">
                     <div class="cart-item-content">
                         <span>${product.product}</span>
-                        <span>Cantidad: ${product.count}</span>
+                        <span>: X${product.count} .</span>
                         </div class ="total-items">
-                            <span>$ ${product.price}</span>
+                            <span> $ ${product.price}</span>
                         </div>
                     </div>
                 </div>        
